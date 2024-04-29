@@ -1,0 +1,293 @@
+/*
+Theme Name: marketing
+Theme URI: none
+Description: marketingbusiness
+Author: dark
+Author URI: none
+Version: 1.0
+Tags: RWD, 3coluns
+License: MIT
+License URI: mit
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微軟正黑體", sans-serif, Arial;
+    // 盒子大小：框線盒子 (規範網頁盒子範圍)
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+// header區
+.header_load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8.75rem;
+    z-index: 9999;
+    padding-top: 1.875rem;
+    background-color: #e5e5e5ee;
+    overflow: hidden;
+
+    .inter_box {
+        display: grid;
+        grid-template-columns: 10% 50% 40%;
+
+        .header_logo {
+            margin: 0 auto;
+
+            a {
+                display: inline-block;
+
+                img {
+                    width: 8rem;
+                }
+            }
+        }
+
+        nav {
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-gap: 30px;
+
+            ul {
+                justify-items: center;
+                list-style-type: none;
+                display: block;
+
+                li {
+                    display: block;
+                    padding: 20px 10px;
+
+                    a {
+                        outline: none;
+                        text-decoration: none;
+                        line-height: 5.5;
+                        padding-right: 50px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// main區
+.main {
+    display: block;
+
+    .main_one {
+        background-image: url(./images/demo_one.jpg);
+        width: 100%;
+        height: 100vh;
+        position: relative;
+
+        .promo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .social_message {
+            position: absolute;
+            top: 0;
+            right: 0;
+            row-gap: 0.5rem;
+            width: 5rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .coperight_mark {
+                writing-mode: vertical-rl;
+                font-feature-settings: initial;
+                display: block;
+                margin: 0 auto;
+                transform: translateX(-0.125rem) rotate(90deg);
+            }
+
+            .coperight_font {
+                writing-mode: vertical-rl;
+                font-feature-settings: initial;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .info {
+                margin: 0 auto;
+
+                ul {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+    overflow: clip;
+    max-width: 13370px;
+    width: 13370px;
+    height: 695px;
+    display: block;
+    z-index: -1;
+
+    .spot_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        z-index: -3;
+
+        .spot_bg_show {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1920px;
+            z-index: -3;
+        }
+        .bg {
+            height: 1920px; // 設置圖片高度為800px
+            width: 1920px; // 設置圖片寬度為自動，保持圖片原有比例
+            display: block;
+            /*  cover：填滿  */
+            object-fit: cover;
+        }
+    }
+}
+
+.recommend {
+    padding-top: 5rem;
+    width: 100%;
+    height: 145vh;
+    position: relative;
+    background-image: url(/images/pattern-blue.jpg);
+    z-index: 1;
+    overflow: hidden;
+
+    .deco {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        display: block;
+        width: 100%;
+        max-width: inherit;
+        z-index: 3;
+    }
+
+    .wrapper_service {
+        position: relative;
+
+        .recommend_text {
+            display: block;
+            margin: 0 auto;
+            padding-top: 60px;
+
+            img {
+                margin: 0 auto;
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 25px;
+                z-index: 3;
+            }
+
+            h2 {
+                text-align: center;
+                z-index: 3;
+                position: relative;
+
+                span {
+                    display: block;
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .recommend_content {
+        position: relative;
+        margin-bottom: 2.875rem;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        z-index: 9; // 根據需要進行調整以置於其他元素前面
+        position: relative; // 確保堆疊上下文正確
+        overflow: hidden;
+
+        .recommend_slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 800px;
+            display: flex;
+
+            .post_wrapper {
+                position: relative;
+                width: 37.5rem;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                margin: 10px;
+                pointer-events: auto; /* Enable pointer events */
+
+                .promo {
+                    width: 100%;
+                    row-gap: 1.75rem;
+                    width: 23.75rem;
+
+                    .post_img {
+                        background-color: inherit;
+                        border-radius: inherit;
+                        border-radius: 50px;
+
+                        .pic {
+                            width: 800px;
+                            height: 300px;
+
+                            &:hover{
+                                transform: rotate(30);
+                            }
+                        }
+
+                        .Even{
+                            height: 640px;
+                        }
+                    }
+
+                    .post_textarea {
+                        display: block;
+                        margin: 5px;
+                        width: auto; /* Adjust based on layout requirements */
+                        height: auto; /* Adjust based on layout requirements */
+
+                        a {
+                            text-decoration: none;
+                            position: relative; /* 這可以幫助 z-index 生效 */
+                            z-index: 10; /* 這個值需要大於任何可能覆蓋的元素 */
+                            width: 100%; /* 確保 a 標籤寬度充滿容器 */
+                            height: 100%; /* 確保 a 標籤高度充滿容器 */
+                            display: block; /* 使 a 標籤表現像一個區塊元素 */
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
