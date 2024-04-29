@@ -357,4 +357,12 @@ License URI: mit
             font-family: sans-serif;
         }
     }
+
+    .info_content {
+        position: relative;
+        overflow: hidden;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-top: -2.5rem;
+    }
 }

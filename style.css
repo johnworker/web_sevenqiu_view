@@ -314,4 +314,11 @@ License URI: mit
   font-size: 18px;
   font-weight: 500;
   font-family: sans-serif;
+}
+.intelligence .info_content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: -2.5rem;
 }/*# sourceMappingURL=style.css.map */
