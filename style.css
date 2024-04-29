@@ -152,7 +152,7 @@ License URI: mit
   width: 100%;
   height: 145vh;
   position: relative;
-  background-image: url(/images/pattern-blue.jpg);
+  background-image: url(./images/pattern-blue.jpg);
   z-index: 1;
   overflow: hidden;
 }
