@@ -326,9 +326,21 @@ License URI: mit
             position: relative;
             display: grid;
             grid-template-columns: 10% 30% 60%;
+            height: 100px;
+            margin: 0 auto;
 
             h2{
-                width: 100px;
+                display: block;
+                margin: 0 auto;
+
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                span{
+                    text-align: center;
+                }
             }
         }
     }
