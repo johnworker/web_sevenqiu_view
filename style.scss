@@ -314,34 +314,47 @@ License URI: mit
             }
         }
     }
+}
 
-    .intelligence {
+.intelligence {
+    position: relative;
+    background-image: url(./images/bg_hall.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .show_textarea {
         position: relative;
-        background-image: url(./images/bg_hall.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
+        display: grid;
+        grid-template-columns: 15% 25% 60%;
+        height: 100px;
+        margin: 50px 100px 20px;
 
-        .show_textarea {
-            position: relative;
-            display: grid;
-            grid-template-columns: 10% 30% 60%;
-            height: 100px;
+        h2 {
+            display: block;
             margin: 0 auto;
 
-            h2{
+            img {
                 display: block;
                 margin: 0 auto;
-
-                img{
-                    display: block;
-                    margin: 0 auto;
-                }
-
-                span{
-                    text-align: center;
-                }
+                float: left;
             }
+
+            span {
+                text-align: center;
+                line-height: 2.75;
+                padding-left: 20px;
+                font-size: 26px;
+                font-weight: 900;
+                font-family: sans-serif;
+            }
+        }
+
+        span {
+            line-height: 4.5;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: sans-serif;
         }
     }
 }
