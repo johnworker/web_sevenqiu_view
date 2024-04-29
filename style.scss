@@ -312,4 +312,18 @@ License URI: mit
             }
         }
     }
+
+    .intelligence {
+        position: relative;
+        background-image: url(./images/bg_hall.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+
+        .show_textarea {
+            position: relative;
+            display: grid;
+            grid-template-columns: 10% 30% 60%;
+        }
+    }
 }
