@@ -237,7 +237,7 @@ License URI: mit
   height: 300px;
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo .post_img .pic:hover {
-  transform: rotate(30);
+  transform: rotate(-20deg);
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo .post_img .Even {
   height: 640px;
