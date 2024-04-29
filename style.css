@@ -118,7 +118,7 @@ License URI: mit
   position: relative;
   max-width: 13370px;
   width: 13370px;
-  height: 1300px;
+  height: 100vh;
   display: block;
   z-index: -1;
 }
