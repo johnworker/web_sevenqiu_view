@@ -118,7 +118,7 @@ License URI: mit
   position: relative;
   max-width: 13370px;
   width: 13370px;
-  height: 100vh;
+  height: 200vh;
   display: block;
   z-index: -1;
 }
@@ -128,7 +128,7 @@ License URI: mit
   left: 0;
   display: block;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   z-index: -3;
 }
 .wrapper .spot_bg .spot_bg_show {
@@ -204,6 +204,8 @@ License URI: mit
   z-index: 9;
   position: relative;
   overflow: hidden;
+  justify-content: center; /* 水平居中 */
+  flex-wrap: wrap; /* 允許元素換行 */
 }
 .recommend .recommend_content .recommend_slider {
   position: absolute;
@@ -219,8 +221,10 @@ License URI: mit
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  margin: 10px;
   pointer-events: auto; /* Enable pointer events */
+  flex-grow: 1; /* 允許彈性成長以適應空間 */
+  margin: 10px; /* 添加一些外邊距 */
+  max-width: 33%; /* 為了在三列布局中均分父容器的寬度 */
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo {
   width: 100%;
@@ -228,19 +232,32 @@ License URI: mit
   width: 23.75rem;
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo .post_img {
-  background-color: inherit;
-  border-radius: inherit;
   border-radius: 50px;
+  transition: 1s;
+  overflow-y: hidden;
+  margin: auto;
+}
+.recommend .recommend_content .recommend_slider .post_wrapper .promo .post_img:hover {
+  transform: rotate(1deg);
+  overflow-y: hidden;
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo .post_img .pic {
-  width: 800px;
+  width: 400px;
   height: 300px;
+  display: block;
+  transition: 1s;
+  overflow-y: hidden;
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo .post_img .pic:hover {
-  transform: rotate(-20deg);
+  transform: rotate(1deg);
+  overflow-y: hidden;
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo .post_img .Even {
+  width: 500px;
   height: 640px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .recommend .recommend_content .recommend_slider .post_wrapper .promo .post_textarea {
   display: block;

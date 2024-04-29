@@ -11,7 +11,7 @@ $(document).ready(function() {
         draggable: false,
         rtl: false,
         autoplay: false,
-        speed: 600
+        speed: 3000
     });
 
     var scrollTrigger = 450;
@@ -43,6 +43,6 @@ $(document).ready(function() {
         autoplay: true,
         pauseOnHover: true,
         autoplaySpeed: 0,
-        speed: 1000
+        speed: 3000
     });
 });
