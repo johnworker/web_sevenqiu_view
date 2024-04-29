@@ -32,6 +32,7 @@ License URI: mit
 .header_load .inter_box {
   display: grid;
   grid-template-columns: 10% 50% 40%;
+  height: auto;
 }
 .header_load .inter_box .header_logo {
   margin: 0 auto;
@@ -47,7 +48,8 @@ License URI: mit
   width: 100%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-gap: 30px;
+  grid-gap: 10px;
+  justify-content: space-evenly;
 }
 .header_load .inter_box nav ul {
   justify-items: center;

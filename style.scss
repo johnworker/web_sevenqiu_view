@@ -34,6 +34,7 @@ License URI: mit
     .inter_box {
         display: grid;
         grid-template-columns: 10% 50% 40%;
+        height: auto;
 
         .header_logo {
             margin: 0 auto;
@@ -52,7 +53,8 @@ License URI: mit
             width: 100%;
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
-            grid-gap: 30px;
+            grid-gap: 10px;
+            justify-content: space-evenly;
 
             ul {
                 justify-items: center;
@@ -261,12 +263,12 @@ License URI: mit
                             width: 800px;
                             height: 300px;
 
-                            &:hover{
+                            &:hover {
                                 transform: rotate(30);
                             }
                         }
 
-                        .Even{
+                        .Even {
                             height: 640px;
                         }
                     }
