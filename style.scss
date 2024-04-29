@@ -364,5 +364,21 @@ License URI: mit
         padding-top: 5rem;
         padding-bottom: 5rem;
         margin-top: -2.5rem;
+
+        .info_slider{
+            position: absolute;
+            -moz-column-gap: 1.625rem;
+            column-gap: 1.625rem;
+            animation: info 100s linear infinite;
+        }
+
+        @keyframes info {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-285px);
+            }
+          }
     }
 }
