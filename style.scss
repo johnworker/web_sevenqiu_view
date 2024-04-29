@@ -34,10 +34,11 @@ License URI: mit
     .inter_box {
         display: grid;
         grid-template-columns: 10% 50% 40%;
-        height: auto;
+        height: 100px;
 
         .header_logo {
             margin: 0 auto;
+            overflow: hidden;
 
             a {
                 display: inline-block;
@@ -60,6 +61,7 @@ License URI: mit
                 justify-items: center;
                 list-style-type: none;
                 display: block;
+                overflow: hidden;
 
                 li {
                     display: block;
@@ -324,6 +326,10 @@ License URI: mit
             position: relative;
             display: grid;
             grid-template-columns: 10% 30% 60%;
+
+            h2{
+                width: 100px;
+            }
         }
     }
 }
