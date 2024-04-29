@@ -322,19 +322,14 @@ License URI: mit
   padding-top: 5rem;
   padding-bottom: 5rem;
   margin-top: -2.5rem;
-  height: 100vh;
+  height: 100%;
 }
 .intelligence .info_content .info_slider {
   position: absolute;
   -moz-column-gap: 1.625rem;
-  column-gap: 1.625rem;
-  animation: info 100s linear infinite;
+       column-gap: 1.625rem;
 }
-@keyframes info {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-285px);
-  }
+.intelligence .info_content .info_slider .info_post {
+  -moz-column-gap: 1.625rem;
+       column-gap: 1.625rem;
 }/*# sourceMappingURL=style.css.map */
