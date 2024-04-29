@@ -322,6 +322,7 @@ License URI: mit
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 
     .show_textarea {
         position: relative;
@@ -364,6 +365,7 @@ License URI: mit
         padding-top: 5rem;
         padding-bottom: 5rem;
         margin-top: -2.5rem;
+        height: 100vh;
 
         .info_slider{
             position: absolute;
