@@ -11,7 +11,7 @@ $(document).ready(function() {
         draggable: false,
         rtl: false,
         autoplay: false,
-        speed: 3000
+        speed: 600
     });
 
     var scrollTrigger = 450;
