@@ -116,10 +116,9 @@ License URI: mit
 
 .wrapper {
   position: relative;
-  overflow: clip;
   max-width: 13370px;
   width: 13370px;
-  height: 695px;
+  height: 1300px;
   display: block;
   z-index: -1;
 }
