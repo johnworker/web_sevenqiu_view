@@ -47,3 +47,19 @@ $(document).ready(function() {
         cssEase: 'linear'
     });
 });
+
+// intelligence區
+$(document).ready(function() {
+    var $slider = $('.info_post');
+    $slider.slick({
+        infinite: true,
+        slidesToShow: 3,
+        arrows: false,
+        draggable: false,
+        autoplay: true,
+        pauseOnHover: true,
+        autoplaySpeed: 0,
+        speed: 3000,
+        cssEase: 'linear'
+    });
+});
