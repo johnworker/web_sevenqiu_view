@@ -397,6 +397,7 @@ License URI: mit
                     display: grid;
                     grid-template-columns: 40% 60%;
                     padding: 30px;
+                    grid-gap: 50px;
 
                     .show_img{
                         width: 100%;
@@ -404,6 +405,18 @@ License URI: mit
                         img{
                             width: 300px;
                             height: 200px;    
+                        }
+                    }
+
+                    .show_text{
+                        width: 100%;
+
+                        h2{
+                            margin: 50px 0;
+                        }
+
+                        p{
+                            margin: 30px 0;
                         }
                     }
                 }
