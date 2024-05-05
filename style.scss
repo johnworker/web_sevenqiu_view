@@ -181,7 +181,7 @@ License URI: mit
 
     .deco {
         position: absolute;
-        top: -50px;
+        top: 20px;
         left: 0;
         display: block;
         width: 100%;
@@ -191,6 +191,7 @@ License URI: mit
 
     .wrapper_service {
         position: relative;
+        top: 100px;
 
         .recommend_text {
             display: block;
@@ -230,7 +231,7 @@ License URI: mit
         margin-bottom: 2.875rem;
         width: 100%;
         height: 100%;
-        margin-top: 30px;
+        margin-top: 150px;
         z-index: 9; // 根據需要進行調整以置於其他元素前面
         position: relative; // 確保堆疊上下文正確
         overflow: hidden;
@@ -245,6 +246,15 @@ License URI: mit
             height: 800px;
             display: flex;
 
+            // & .slider {
+            //     animation: slide 10s linear infinite;
+            //   }
+
+            // @keyframes slide {
+            //     from { transform: translateX(0); }
+            //     to { transform: translateX(-100%); }
+            //   }
+              
             .post_wrapper {
                 position: relative;
                 width: 37.5rem;
@@ -366,13 +376,21 @@ License URI: mit
         padding-bottom: 5rem;
         margin-top: -2.5rem;
         height: 100%;
+        width: 30000px;
+
 
         .info_slider{
             position: absolute;
             column-gap: 1.625rem;
 
             .info_post{
+                display: grid;
+                grid-template-columns: 30% 70%;
                 column-gap: 1.625rem;
+
+                .info_show{
+                    width: 100%;
+                }
             }
         }
     }

@@ -43,6 +43,7 @@ $(document).ready(function() {
         autoplay: true,
         pauseOnHover: true,
         autoplaySpeed: 0,
-        speed: 3000
+        speed: 3000,
+        cssEase: 'linear'
     });
 });
