@@ -333,10 +333,23 @@ License URI: mit
 }
 .intelligence .info_content .info_slider .info_post {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 25% 25% 25% 25%;
   -moz-column-gap: 1.625rem;
        column-gap: 1.625rem;
 }
 .intelligence .info_content .info_slider .info_post .info_show {
+  width: 800px;
+  height: 265px;
+  background: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 30px;
+}
+.intelligence .info_content .info_slider .info_post .info_show .show_img {
   width: 100%;
+}
+.intelligence .info_content .info_slider .info_post .info_show .show_img img {
+  width: 300px;
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */
