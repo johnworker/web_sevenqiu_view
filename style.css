@@ -333,7 +333,7 @@ License URI: mit
 }
 .intelligence .info_content .info_slider .info_post {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 27% 27% 27% 27%;
   -moz-column-gap: 1.625rem;
        column-gap: 1.625rem;
 }
