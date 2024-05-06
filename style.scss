@@ -266,6 +266,7 @@ License URI: mit
                 margin: 10px; /* 添加一些外邊距 */
                 max-width: 33%; /* 為了在三列布局中均分父容器的寬度 */
                 align-items: center;
+                grid-template-columns: none !important;
 
                 .promo {
                     width: 100%;
