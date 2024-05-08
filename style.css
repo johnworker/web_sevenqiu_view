@@ -101,8 +101,8 @@ License URI: mit
 }
 .main .main_one .text_box .promo_one {
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 150px;
+  left: 380px;
   font-size: 40px;
   color: #383838;
   z-index: 1;
@@ -110,8 +110,8 @@ License URI: mit
 }
 .main .main_one .text_box .promo_two {
   position: absolute;
-  top: 70%;
-  left: 29%;
+  top: 210px;
+  left: 440px;
   font-size: 40px;
   color: #383838;
   z-index: 1;
@@ -198,7 +198,7 @@ License URI: mit
   animation-name: aliner;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 3s;
+  animation-delay: 2.8s;
   animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
 }
 
