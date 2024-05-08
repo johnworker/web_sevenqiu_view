@@ -243,6 +243,31 @@ $color_dark_gray: #383838;
     } 
 }
 
+.line_right{
+    position: absolute;
+    left: 570px;
+    top: 310px;
+    width: 0;
+    opacity: 0;
+    animation-name: rliner;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3.6s;
+    animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
+
+    @keyframes rliner {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+        100% {
+            width: 950px;
+            opacity: 1;
+        } 
+    }    
+
+}
+
 // 卷軸移動區塊
 .wrapper {
     position: relative;
