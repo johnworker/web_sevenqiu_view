@@ -25,7 +25,7 @@ License URI: mit
   right: 0;
   height: 8.75rem;
   z-index: 9999;
-  background-color: rgba(229, 229, 229, 0.9333333333);
+  background-color: #ebebeb;
   overflow-y: hidden;
 }
 .header_load .inter_box {
@@ -163,6 +163,13 @@ License URI: mit
   to {
     transform: translateX(2%);
   }
+}
+
+.line_one {
+  width: 50px; /* Initial width */
+  height: 5px; /* Height of the line */
+  background-color: black;
+  transition: width 2s ease-in-out; /* Animation timing */
 }
 
 .wrapper {

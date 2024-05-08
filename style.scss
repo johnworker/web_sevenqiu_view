@@ -10,6 +10,7 @@ License: MIT
 License URI: mit
 */
 
+$color_background: #ebebeb;
 $color_light_gray: #919191;
 $color_dark_gray: #383838;
 
@@ -30,7 +31,7 @@ $color_dark_gray: #383838;
     right: 0;
     height: 8.75rem;
     z-index: 9999;
-    background-color: #e5e5e5ee;
+    background-color: $color_background;
     overflow-y: hidden;
 
     .inter_box {
@@ -101,7 +102,7 @@ $color_dark_gray: #383838;
     display: block;
 
     .main_one {
-        background: #ebebeb;
+        background: $color_background;
         width: 100%;
         height: 100vh;
         position: relative;
@@ -190,6 +191,13 @@ $color_dark_gray: #383838;
             transform: translateX(2%);
         }
     }
+}
+
+.line_one{
+    width: 50px; /* Initial width */
+    height: 5px; /* Height of the line */
+    background-color: black;
+    transition: width 2s ease-in-out; /* Animation timing */
 }
 
 // 卷軸移動區塊
