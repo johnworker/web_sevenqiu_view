@@ -85,25 +85,29 @@ License URI: mit
   display: block;
 }
 .main .main_one {
-  background: #EBEBEB;
+  background: #ebebeb;
   width: 100%;
   height: 100vh;
   position: relative;
 }
-.main .main_one .promo_one {
+.main .main_one .text_box {
+  width: 100%;
+  height: 300px;
+  top: 200px;
+  position: relative;
+}
+.main .main_one .text_box .promo_one {
   position: absolute;
   top: 50%;
   left: 25%;
-  transform: translate(-50%, -50%);
   font-size: 40px;
   color: #383838;
   z-index: 1;
 }
-.main .main_one .promo_two {
+.main .main_one .text_box .promo_two {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 29%;
-  transform: translate(-50%, -50%);
   font-size: 40px;
   color: #383838;
   z-index: 1;
@@ -115,7 +119,7 @@ License URI: mit
   row-gap: 0.5rem;
   width: 5rem;
   height: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 }
