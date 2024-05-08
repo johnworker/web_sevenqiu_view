@@ -215,7 +215,7 @@ License URI: mit
 .line_right {
   position: absolute;
   left: 570px;
-  top: 310px;
+  top: 450px;
   width: 0;
   opacity: 0;
   animation-name: rliner;
