@@ -243,32 +243,25 @@ License URI: mit
 
 .wrapper {
   position: relative;
-  max-width: 13370px;
-  width: 13370px;
-  height: 200vh;
+  width: 100vw;
+  height: auto;
   display: block;
   z-index: -1;
 }
 .wrapper .spot_bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100vw;
-  height: 200vh;
-  z-index: -3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .wrapper .spot_bg .spot_bg_show {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1920px;
-  z-index: -3;
+  position: relative;
+  white-space: nowrap; /* 使圖片水平排列 */
+  transition: transform 0.5s ease; /* 平滑變換效果 */
 }
 .wrapper .spot_bg .bg {
-  height: 1920px;
-  width: 1920px;
-  display: block;
+  width: auto;
+  height: 100%;
   /*  cover：填滿  */
   -o-object-fit: cover;
      object-fit: cover;

@@ -214,7 +214,7 @@ $color_dark_gray: #383838;
     100% {
         width: 115px;
         opacity: 1;
-    } 
+    }
 }
 
 .line_two {
@@ -239,10 +239,10 @@ $color_dark_gray: #383838;
     100% {
         width: 105px;
         opacity: 1;
-    } 
+    }
 }
 
-.line_right{
+.line_right {
     position: absolute;
     left: 750px;
     top: 450px;
@@ -262,12 +262,11 @@ $color_dark_gray: #383838;
         100% {
             width: 900px;
             opacity: 1;
-        } 
-    }    
-
+        }
+    }
 }
 
-.line_wave_bottom{
+.line_wave_bottom {
     width: 1200px;
     position: absolute;
     left: 0;
@@ -278,32 +277,26 @@ $color_dark_gray: #383838;
 .wrapper {
     position: relative;
     //overflow: clip;
-    max-width: 13370px;
-    width: 13370px;
-    height: 200vh;
+    width: 100vw;
+    height: auto;
     display: block;
     z-index: -1;
 
     .spot_bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100vw;
-        height: 200vh;
-        z-index: -3;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
         .spot_bg_show {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 1920px;
-            z-index: -3;
+            position: relative;
+            white-space: nowrap; /* 使圖片水平排列 */
+            transition: transform 0.5s ease; /* 平滑變換效果 */
         }
+
         .bg {
-            height: 1920px; // 設置圖片高度為800px
-            width: 1920px; // 設置圖片寬度為自動，保持圖片原有比例
-            display: block;
+            width: auto;
+            height: 100%;
             /*  cover：填滿  */
             object-fit: cover;
         }
