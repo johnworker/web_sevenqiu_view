@@ -89,6 +89,7 @@ License URI: mit
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow-y: hidden;
 }
 .main .main_one .text_box {
   position: relative;
@@ -148,7 +149,7 @@ License URI: mit
 }
 
 .mark_pic {
-  animation: slide 5s linear;
+  animation: slide 2s linear;
   display: block;
   position: absolute;
   top: 160px;
@@ -157,7 +158,7 @@ License URI: mit
 }
 @keyframes slide {
   from {
-    transform: translateX(-10%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(2%);

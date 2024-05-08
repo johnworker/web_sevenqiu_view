@@ -105,6 +105,7 @@ $color_dark_gray: #383838;
         width: 100%;
         height: 100vh;
         position: relative;
+        overflow-y: hidden;
 
         .text_box {
             position: relative;
@@ -174,7 +175,7 @@ $color_dark_gray: #383838;
 }
 
 .mark_pic {
-    animation: slide 5s linear;
+    animation: slide 2s linear;
     display: block;
     position: absolute;
     top: 160px;
@@ -183,7 +184,7 @@ $color_dark_gray: #383838;
 
     @keyframes slide {
         from {
-            transform: translateX(-10%);
+            transform: translateX(-100%);
         }
         to {
             transform: translateX(2%);
