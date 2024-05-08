@@ -30,7 +30,7 @@ License URI: mit
 }
 .header_load .inter_box {
   display: grid;
-  grid-template-columns: 30% 10% 60%;
+  grid-template-columns: 30% 20% 50%;
   height: 100%;
 }
 .header_load .inter_box .header_logo {
@@ -101,9 +101,9 @@ License URI: mit
 }
 .main .main_one .text_box .promo_one {
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 380px;
-  font-size: 40px;
+  font-size: 48px;
   color: #383838;
   z-index: 1;
   letter-spacing: 8px;
@@ -111,8 +111,8 @@ License URI: mit
 .main .main_one .text_box .promo_two {
   position: absolute;
   top: 210px;
-  left: 440px;
-  font-size: 40px;
+  left: 480px;
+  font-size: 48px;
   color: #383838;
   z-index: 1;
   letter-spacing: 8px;
@@ -152,7 +152,7 @@ License URI: mit
   animation: slide 2s linear;
   display: block;
   position: absolute;
-  top: 160px;
+  top: 130px;
   width: 500px;
   transform: translateX(2%);
 }
@@ -168,7 +168,7 @@ License URI: mit
 .line_one {
   position: absolute;
   left: 375px;
-  top: 195px;
+  top: 175px;
   width: 0;
   opacity: 0;
   animation-name: quickliner;
@@ -184,14 +184,14 @@ License URI: mit
     opacity: 0;
   }
   100% {
-    width: 95px;
+    width: 115px;
     opacity: 1;
   }
 }
 .line_two {
   position: absolute;
-  left: 485px;
-  top: 255px;
+  left: 535px;
+  top: 265px;
   width: 95px;
   width: 0;
   opacity: 0;
@@ -208,20 +208,20 @@ License URI: mit
     opacity: 0;
   }
   100% {
-    width: 95px;
+    width: 105px;
     opacity: 1;
   }
 }
 .line_right {
   position: absolute;
-  left: 570px;
+  left: 750px;
   top: 450px;
   width: 0;
   opacity: 0;
   animation-name: rliner;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 3.6s;
+  animation-delay: 3.8s;
   animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
 }
 @keyframes rliner {
@@ -233,6 +233,13 @@ License URI: mit
     width: 950px;
     opacity: 1;
   }
+}
+
+.line_wave_bottom {
+  width: 1200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .wrapper {
