@@ -107,10 +107,12 @@ $color_dark_gray: #383838;
         position: relative;
 
         .text_box {
+            position: relative;
             width: 100%;
             height: 300px;
             top: 200px;
-            position: relative;
+            left: -100px;
+            overflow-y: hidden;
 
             .promo_one {
                 position: absolute;
@@ -119,6 +121,7 @@ $color_dark_gray: #383838;
                 font-size: 40px;
                 color: $color_dark_gray;
                 z-index: 1;
+                letter-spacing: 8px
             }
 
             .promo_two {
@@ -128,6 +131,7 @@ $color_dark_gray: #383838;
                 font-size: 40px;
                 color: $color_dark_gray;
                 z-index: 1;
+                letter-spacing: 8px
             }
         }
 
