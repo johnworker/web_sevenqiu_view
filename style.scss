@@ -10,6 +10,7 @@ License: MIT
 License URI: mit
 */
 
+$color_light_gray: #919191;
 $color_dark_gray: #383838;
 
 * {
@@ -83,7 +84,7 @@ $color_dark_gray: #383838;
                         line-height: 7;
                         padding-right: 10px;
                         display: block;
-                        color: #919191;
+                        color: $color_light_gray;
 
                         &:hover{
                             color: #000;
@@ -111,14 +112,18 @@ $color_dark_gray: #383838;
             left: 25%;
             transform: translate(-50%, -50%);
             font-size: 40px;
+            color: $color_dark_gray;
+            z-index: 1;
         }
 
         .promo_two {
             position: absolute;
-            top: 58%;
+            top: 60%;
             left: 29%;
             transform: translate(-50%, -50%);
             font-size: 40px;
+            color: $color_dark_gray;
+            z-index: 1;
         }
 
         .social_message {
@@ -160,14 +165,15 @@ $color_dark_gray: #383838;
 
 .mark_pic{
     animation: slide 5s linear;
-    top: 200px;
     display: block; 
     position: absolute;
-    transform: translateX(10%);
+    top: 160px;
+    width: 500px;
+    transform: translateX(2%);
 
     @keyframes slide {
         from { transform: translateX(-10%); }
-        to { transform: translateX(10%); }
+        to { transform: translateX(2%); }
       }
       
 }

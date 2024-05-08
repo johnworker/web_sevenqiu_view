@@ -96,13 +96,17 @@ License URI: mit
   left: 25%;
   transform: translate(-50%, -50%);
   font-size: 40px;
+  color: #383838;
+  z-index: 1;
 }
 .main .main_one .promo_two {
   position: absolute;
-  top: 58%;
+  top: 60%;
   left: 29%;
   transform: translate(-50%, -50%);
   font-size: 40px;
+  color: #383838;
+  z-index: 1;
 }
 .main .main_one .social_message {
   position: absolute;
@@ -137,17 +141,18 @@ License URI: mit
 
 .mark_pic {
   animation: slide 5s linear;
-  top: 200px;
   display: block;
   position: absolute;
-  transform: translateX(10%);
+  top: 160px;
+  width: 500px;
+  transform: translateX(2%);
 }
 @keyframes slide {
   from {
     transform: translateX(-10%);
   }
   to {
-    transform: translateX(10%);
+    transform: translateX(2%);
   }
 }
 
