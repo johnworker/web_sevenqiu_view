@@ -171,14 +171,14 @@ License URI: mit
   top: 195px;
   width: 0;
   opacity: 0;
-  animation-name: stretch;
+  animation-name: quickliner;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 2.3s;
+  animation-delay: 2s;
   animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
 }
 
-@keyframes stretch {
+@keyframes quickliner {
   0% {
     width: 0;
     opacity: 0;
@@ -198,7 +198,7 @@ License URI: mit
   animation-name: aliner;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-delay: 3.2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
 }
 
