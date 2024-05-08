@@ -166,12 +166,52 @@ License URI: mit
 }
 
 .line_one {
-  width: 50px; /* Initial width */
-  height: 5px; /* Height of the line */
-  background-color: black;
-  transition: width 2s ease-in-out; /* Animation timing */
+  position: absolute;
+  left: 375px;
+  top: 195px;
+  width: 0;
+  opacity: 0;
+  animation-name: stretch;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
 }
 
+@keyframes stretch {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 95px;
+    opacity: 1;
+  }
+}
+.line_two {
+  position: absolute;
+  left: 485px;
+  top: 255px;
+  width: 95px;
+  width: 0;
+  opacity: 0;
+  animation-name: aliner;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
+}
+
+@keyframes aliner {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 95px;
+    opacity: 1;
+  }
+}
 .wrapper {
   position: relative;
   max-width: 13370px;

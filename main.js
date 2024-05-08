@@ -1,3 +1,4 @@
+
 // wrapper區
 $(document).ready(function() {
     var $slider = $('.spot_bg_show');
