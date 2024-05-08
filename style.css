@@ -219,9 +219,9 @@ License URI: mit
   width: 0;
   opacity: 0;
   animation-name: rliner;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-timing-function: linear;
-  animation-delay: 3.8s;
+  animation-delay: 3s;
   animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
 }
 @keyframes rliner {
