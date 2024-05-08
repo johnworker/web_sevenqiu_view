@@ -47,7 +47,7 @@ $color_dark_gray: #383838;
                 display: inline-block;
 
                 img {
-                    width: 260px;
+                    width: 180px;
                     display: block;
                     margin: 0 20px;
                 }
@@ -70,7 +70,6 @@ $color_dark_gray: #383838;
 
                 li {
                     display: flex;
-                    padding: 20px 10px;
                     align-items: center;
 
                     img {
@@ -261,7 +260,7 @@ $color_dark_gray: #383838;
             opacity: 0;
         }
         100% {
-            width: 950px;
+            width: 900px;
             opacity: 1;
         } 
     }    

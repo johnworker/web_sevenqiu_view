@@ -41,7 +41,7 @@ License URI: mit
   display: inline-block;
 }
 .header_load .inter_box .header_logo a img {
-  width: 260px;
+  width: 180px;
   display: block;
   margin: 0 20px;
 }
@@ -61,7 +61,6 @@ License URI: mit
 }
 .header_load .inter_box nav ul li {
   display: flex;
-  padding: 20px 10px;
   align-items: center;
 }
 .header_load .inter_box nav ul li img {
@@ -230,7 +229,7 @@ License URI: mit
     opacity: 0;
   }
   100% {
-    width: 950px;
+    width: 900px;
     opacity: 1;
   }
 }
