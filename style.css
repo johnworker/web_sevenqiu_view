@@ -243,8 +243,8 @@ License URI: mit
 
 .wrapper {
   position: relative;
-  width: 100vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: block;
   z-index: -1;
 }
@@ -254,17 +254,17 @@ License URI: mit
   overflow: hidden;
 }
 .wrapper .spot_bg .spot_bg_show {
-  position: absolute;
   position: relative;
   white-space: nowrap; /* 使圖片水平排列 */
   transition: transform 0.5s ease; /* 平滑變換效果 */
 }
 .wrapper .spot_bg .bg {
-  width: auto;
+  width: 100%;
   height: 100%;
   /*  cover：填滿  */
   -o-object-fit: cover;
      object-fit: cover;
+  white-space: nowrap; /* 使圖片水平排列 */
 }
 
 .recommend {

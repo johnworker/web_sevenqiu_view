@@ -277,8 +277,8 @@ $color_dark_gray: #383838;
 .wrapper {
     position: relative;
     //overflow: clip;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
     display: block;
     z-index: -1;
 
@@ -288,17 +288,17 @@ $color_dark_gray: #383838;
         overflow: hidden;
 
         .spot_bg_show {
-            position: absolute;
             position: relative;
             white-space: nowrap; /* 使圖片水平排列 */
             transition: transform 0.5s ease; /* 平滑變換效果 */
         }
 
         .bg {
-            width: auto;
+            width: 100%;
             height: 100%;
             /*  cover：填滿  */
             object-fit: cover;
+            white-space: nowrap; /* 使圖片水平排列 */
         }
     }
 }
