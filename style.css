@@ -34,14 +34,14 @@ License URI: mit
   height: 100%;
 }
 .header_load .inter_box .header_logo {
-  margin: 0 auto;
+  margin: 0 10px;
   overflow: hidden;
 }
 .header_load .inter_box .header_logo a {
   display: inline-block;
 }
 .header_load .inter_box .header_logo a img {
-  width: 55%;
+  width: 260px;
   display: block;
   margin: 0 20px;
 }
