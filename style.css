@@ -65,8 +65,9 @@ License URI: mit
   align-items: center;
 }
 .header_load .inter_box nav ul li img {
-  width: 30px;
-  height: 15px;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
 }
 .header_load .inter_box nav ul li a {
   outline: none;
@@ -74,6 +75,10 @@ License URI: mit
   line-height: 7;
   padding-right: 10px;
   display: block;
+  color: #919191;
+}
+.header_load .inter_box nav ul li a:hover {
+  color: #000;
 }
 
 .main {
@@ -85,11 +90,19 @@ License URI: mit
   height: 100vh;
   position: relative;
 }
-.main .main_one .promo {
+.main .main_one .promo_one {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+.main .main_one .promo_two {
+  position: absolute;
+  top: 58%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
 }
 .main .main_one .social_message {
   position: absolute;
@@ -124,17 +137,17 @@ License URI: mit
 
 .mark_pic {
   animation: slide 5s linear;
-  top: 400px;
+  top: 200px;
   display: block;
   position: absolute;
-  transform: translateX(100%);
+  transform: translateX(10%);
 }
 @keyframes slide {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-10%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(10%);
   }
 }
 

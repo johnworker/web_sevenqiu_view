@@ -72,8 +72,9 @@ $color_dark_gray: #383838;
                     align-items: center;
 
                     img{
-                        width: 30px;
-                        height: 15px;
+                        width: 7px;
+                        height: 7px;
+                        margin-right: 10px;
                     }
 
                     a {
@@ -82,6 +83,11 @@ $color_dark_gray: #383838;
                         line-height: 7;
                         padding-right: 10px;
                         display: block;
+                        color: #919191;
+
+                        &:hover{
+                            color: #000;
+                        }
                     }
                 }
             }
@@ -99,11 +105,20 @@ $color_dark_gray: #383838;
         height: 100vh;
         position: relative;
 
-        .promo {
+        .promo_one {
             position: absolute;
             top: 50%;
-            left: 50%;
+            left: 25%;
             transform: translate(-50%, -50%);
+            font-size: 40px;
+        }
+
+        .promo_two {
+            position: absolute;
+            top: 58%;
+            left: 29%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
         }
 
         .social_message {
@@ -145,14 +160,14 @@ $color_dark_gray: #383838;
 
 .mark_pic{
     animation: slide 5s linear;
-    top: 400px;
+    top: 200px;
     display: block; 
     position: absolute;
-    transform: translateX(100%);
+    transform: translateX(10%);
 
     @keyframes slide {
-        from { transform: translateX(-100%); }
-        to { transform: translateX(100%); }
+        from { transform: translateX(-10%); }
+        to { transform: translateX(10%); }
       }
       
 }
