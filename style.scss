@@ -82,7 +82,7 @@ $color_dark_gray: #383838;
                     a {
                         outline: none;
                         text-decoration: none;
-                        line-height: 67;
+                        line-height: 6;
                         padding-right: 10px;
                         display: block;
                         font-size: 20px;
@@ -287,32 +287,31 @@ $color_dark_gray: #383838;
         height: 100%;
 
         .spot_bg_show {
-            display: flex;    /* 使用 flexbox 使圖片水平排列 */
+            display: flex; /* 使用 flexbox 使圖片水平排列 */
             //overflow-x: hidden; /* 隱藏水平滾動條 */
             white-space: nowrap; /* 確保所有圖片都在同一行顯示 */
-            width: calc(100vw * 4);  // 假設有 8 張圖片，每張圖片寬度等於容器寬度
-            min-height: 100%;  // 確保區域高度充足
+            width: calc(100vw * 4); // 假設有 8 張圖片，每張圖片寬度等於容器寬度
+            min-height: 100%; // 確保區域高度充足
         }
 
         .infoma_box {
             width: 100%;
 
-            .wave_bg{
+            .wave_bg {
                 position: absolute;
 
-                .top_wave{
+                .top_wave {
                     width: 700px;
                     height: 1200px;
                 }
             }
 
             .bg {
-                flex-shrink: 0;  /* 防止圖片在 flex 容器中縮放 */
+                flex-shrink: 0; /* 防止圖片在 flex 容器中縮放 */
                 // flex: 0 0 100%;  // 每張圖片佔滿容器寬度
-                width: auto;     /* 圖片自然寬度 */
-                height: 1200px;    /* 設定高度為容器高度 */
+                width: auto; /* 圖片自然寬度 */
+                height: 1200px; /* 設定高度為容器高度 */
             }
-    
         }
     }
 }
@@ -569,4 +568,62 @@ $color_dark_gray: #383838;
             }
         }
     }
+}
+
+// 頁尾區
+footer {
+    background: $color_background;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+
+    .logo_mini_box {
+        width: 200px;
+        margin: 0 auto;
+        overflow-y: hidden;
+
+        .logo {
+            padding: 10px 0;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .link {
+        padding: 10px 0;
+
+        img {
+            width: 7px;
+            height: 7px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            padding: 0 10px;
+            color: $color_light_gray;
+
+            &:hover {
+                color: $color_dark_gray;
+            }
+        }
+    }
+
+    .copy {
+        font-size: 12px;
+    }
+}
+
+// 至頂按鈕
+#arrow {
+    background-image: url(./images/arrow.png);
+    position: fixed;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
 }

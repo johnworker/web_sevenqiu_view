@@ -55,3 +55,22 @@ $(document).ready(function() {
         cssEase: 'linear'
     });
 });
+
+
+// 捲動效果
+$(function () {
+    //捲動至top0的位置
+    $("#arrow").click(function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    //指定捲軸位置淡出淡入
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('#arrow').stop().fadeTo('fast', 1);
+        } else {
+            $('#arrow').stop().fadeOut('fast');
+        }
+    });
+});

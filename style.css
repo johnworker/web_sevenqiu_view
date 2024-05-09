@@ -72,7 +72,7 @@ License URI: mit
 .header_load .inter_box nav ul li a {
   outline: none;
   text-decoration: none;
-  line-height: 67;
+  line-height: 6;
   padding-right: 10px;
   display: block;
   font-size: 20px;
@@ -489,4 +489,52 @@ License URI: mit
 }
 .intelligence .info_content .info_slider .info_post .info_show .show_text p {
   margin: 30px 0;
+}
+
+footer {
+  background: #ebebeb;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+}
+footer .logo_mini_box {
+  width: 200px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+footer .logo_mini_box .logo {
+  padding: 10px 0;
+}
+footer .logo_mini_box .logo img {
+  width: 100px;
+}
+footer .link {
+  padding: 10px 0;
+}
+footer .link img {
+  width: 7px;
+  height: 7px;
+}
+footer .link a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 10px;
+  color: #919191;
+}
+footer .link a:hover {
+  color: #383838;
+}
+footer .copy {
+  font-size: 12px;
+}
+
+#arrow {
+  background-image: url(./images/arrow.png);
+  position: fixed;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
