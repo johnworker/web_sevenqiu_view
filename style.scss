@@ -276,7 +276,6 @@ $color_dark_gray: #383838;
 // 卷軸移動區塊
 .wrapper {
     position: relative;
-    //overflow: clip;
     width: 100%;
     height: 100%;
     display: block;
@@ -284,7 +283,6 @@ $color_dark_gray: #383838;
     .spot_bg {
         width: 100%;
         height: 100%;
-        //overflow: hidden;
 
         .spot_bg_show {
             display: flex;    /* 使用 flexbox 使圖片水平排列 */
