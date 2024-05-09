@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>柒秋行銷</title>
-    <link href="/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="./style.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -14,20 +17,41 @@
     <header class="header_load">
         <div class="inter_box">
             <h2 class="header_logo">
-                <a href="">
-                    <img src="/images/Qiqiu_logo.png" alt="柒秋LOGO">
+                <a href="./index.html">
+                    <img src="./images/font_logo.png" alt="柒秋LOGO">
                 </a>
             </h2>
             <div class="gavn"></div>
             <nav>
                 <ul>
-                    <li><a href="">設計案例</a></li>
+                    <li>
+                        <img src="./images/mark_small_orange.png" alt="">
+                        <a href="./about.html">About</a>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a href="">行銷規劃</a></li>
+                    <li>
+                        <img src="./images/mark_small_orange.png" alt="">
+                        <a href="">Works</a>
+                    </li>
                 </ul>
                 <ul>
-                    <li><a href="">關於我們</a></li>
+                    <li>
+                        <img src="./images/mark_small_orange.png" alt="">
+                        <a href="./service.html">Service</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./images/mark_small_orange.png" alt="">
+                        <a href="">Process</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="./images/mark_small_orange.png" alt="">
+                        <a href="">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +61,18 @@
     <!-- 主要內容 -->
     <div class="main">
         <div class="main_one">
-            <h2 class="promo">包裝故事行銷夢想</h2>
+            <div class="text_box">
+                <p class="promo_one" data-aos="fade-up" data-aos-duration="1200"><b>企業</b>的翻倍，</p>
+                <p class="promo_two" data-aos="fade-up" data-aos-duration="3000">由<b>柒秋</b>達成。</p>
+                <img class="line_one" src="./images/font_bottom_line.png" alt="">
+                <img class="line_two" src="./images/font_bottom_line.png" alt="">
+            </div>
+            <img class="line_right" src="./images/line_right_test.png" alt="">
+
+            <img class="line_wave_bottom" src="./images/wave_bottom.png" alt="">
+
+            <img class="mark_pic" src="./images/ball_libht.png" alt="">
+            <!-- <img src="./images/line_right.png" alt=""> -->
             <div class="social_message">
                 <span class="coperight">
                     <span class="coperight_mark">&copy; </span>
@@ -46,38 +81,26 @@
                 <aside class="info">
                     <ul>
                         <li><a href="https://www.youtube.com/results?search_query=eat+what" target="blank"><img
-                                    src="/images/youtube.png" alt="youtube"></a></li>
+                                    src="./images/youtube.png" alt="youtube"></a></li>
                         <li><a href="https://www.instagram.com/besscomha" target="blank"><img
-                                    src="/images/instagram.png" alt="instagram"></a></li>
+                                    src="./images/instagram.png" alt="instagram"></a></li>
                         <li><a href="http://m.facebook.com/yanjun.liao.50?ref=bookmarks" target="blank"><img
-                                    src="/images/facebook.png" alt="facebook"></a></li>
+                                    src="./images/facebook.png" alt="facebook"></a></li>
                     </ul>
                 </aside>
             </div>
         </div>
     </div>
 
-    <section class="wrapper">
-        <div class="spot_bg">
-            <div class="spot_bg_show">
-                <img class="bg" src="/images/show_one.jpg" alt="">
-                <img class="bg" src="/images/show_two.jpg" alt="">
-                <img class="bg" src="/images/show_three.jpg" alt="">
-                <img class="bg" src="/images/show_four.jpg" alt="">
-                <img class="bg" src="/images/show_five.jpg" alt="">
-                <img class="bg" src="/images/show_six.jpg" alt="">
-                <img class="bg" src="/images/show_seven.jpg" alt="">
-                <img class="bg" src="/images/show_eight.jpg" alt="">
-            </div>
-        </div>
-
-    </section>
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

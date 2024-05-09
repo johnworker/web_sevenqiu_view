@@ -570,49 +570,120 @@ $color_dark_gray: #383838;
     }
 }
 
+// 關於我們頁面
+.about_bg{
+    width: 100%;
+    height: 100vh;
+    background: $color_background;
+    padding: 0 64px;
+    display: flex;
+
+    .about_info{
+        width: 100%;
+        display: inline-block;
+        margin-top: 200px;
+
+        h2{
+            padding: 20px 0;
+            font-size: 36px;
+        }
+        
+        p{
+            padding: 0 50px 0 0;
+            line-height: 2.4;
+            font-size: 22px;
+        }
+    }
+
+    .about_img{
+        overflow-y: hidden;
+        width: 100%;
+        height: 400px;
+        margin-top: 200px;
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
 // 頁尾區
 footer {
     background: $color_background;
     padding: 50px;
-    text-align: center;
     width: 100%;
 
-    .logo_mini_box {
-        width: 200px;
-        margin: 0 auto;
-        overflow-y: hidden;
+    .big_container {
+        display: flex;
+        justify-content: center;
+        column-gap: 250px;
 
-        .logo {
-            padding: 10px 0;
+        .mini_container {
+            width: 100%;
 
-            img {
-                width: 100px;
+            .logo_mini_box {
+                width: 200px;
+                overflow-y: hidden;
+
+                .logo {
+                    padding: 10px 0;
+
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+
+            .company {
+                width: 100%;
+
+                h2 {
+                    padding: 10px 0;
+                    font-size: 30px;
+                }
+
+                p {
+                    padding: 5px 0;
+                    font-size: 22px;
+                }
+            }
+
+            .link {
+                padding: 10px 0;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    color: $color_light_gray;
+
+                    &:hover {
+                        color: $color_dark_gray;
+                    }
+                }
+            }
+
+            .company_info{
+                width: 100%;
+
+                p{
+                    padding: 10px 0;
+                    font-size: 22px;
+                }
+            }
+
+            .copy {
+                padding-top: 20px;
+                font-size: 12px;
             }
         }
-    }
-
-    .link {
-        padding: 10px 0;
-
-        img {
-            width: 7px;
-            height: 7px;
-        }
-
-        a {
-            text-decoration: none;
-            font-size: 14px;
-            padding: 0 10px;
-            color: $color_light_gray;
-
-            &:hover {
-                color: $color_dark_gray;
-            }
-        }
-    }
-
-    .copy {
-        font-size: 12px;
     }
 }
 
