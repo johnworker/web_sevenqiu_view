@@ -534,14 +534,18 @@ License URI: mit
 }
 .process_bg .process_bigbox {
   display: flex;
-  margin: 0 auto;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  margin: 200px auto;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   max-width: 1310px;
 }
 .process_bg .process_bigbox .process_minibox {
   margin: 0 auto;
   justify-items: center;
+}
+.process_bg .process_bigbox .process_minibox .process_headline {
+  text-align: center;
+  padding: 20px 0;
 }
 .process_bg .process_bigbox .liner {
   display: flex;
@@ -549,10 +553,9 @@ License URI: mit
   align-items: center;
   position: relative;
   content: "";
-  display: block;
   height: 1px;
   background-color: rgba(31, 38, 36, 0.4);
-  top: 250px;
+  top: 50px;
   width: 200px;
 }
 

@@ -621,13 +621,18 @@ $color_dark_gray: #383838;
 
     .process_bigbox {
         display: flex;
-        margin: 0 auto;
-        column-gap: 40px;
+        margin: 200px auto;
+        column-gap: 10px;
         max-width: 1310px;
 
         .process_minibox {
             margin: 0 auto;
             justify-items: center;
+
+            .process_headline{
+                text-align: center;
+                padding: 20px 0;
+            }
         }
 
         .liner {
@@ -636,10 +641,9 @@ $color_dark_gray: #383838;
             align-items: center;
             position: relative;
             content: "";
-            display: block;
             height: 1px;
             background-color: rgba(31, 38, 36, 0.4);
-            top: 250px;
+            top: 50px;
             width: 200px;
         }
     }
