@@ -10,6 +10,7 @@ License: MIT
 License URI: mit
 */
 
+$color_white: #ffffff;
 $color_background: #ebebeb;
 $color_light_gray: #919191;
 $color_dark_gray: #383838;
@@ -574,7 +575,7 @@ $color_dark_gray: #383838;
 .about_bg{
     width: 100%;
     height: 100vh;
-    background: $color_background;
+    background: $color_white;
     padding: 0 64px;
     display: flex;
 
@@ -607,6 +608,12 @@ $color_dark_gray: #383838;
             height: auto;
         }
     }
+}
+
+// 服務流程頁面
+.process_bg {
+    width: 100%;
+    height: 100vh;
 }
 
 // 頁尾區
