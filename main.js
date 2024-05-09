@@ -35,21 +35,18 @@
 // wrapper test
 document.addEventListener('scroll', function() {
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    var startScroll = 500;  // 設定起始滾動距離為 500px
+    var wrapperStart = document.querySelector('.wrapper').offsetTop;
+    var wrapperHeight = document.querySelector('.wrapper').offsetHeight;
+    var startScroll = 150; // 將觸發點設定為 150px
 
-    if (scrollPosition > startScroll) {
-        var maxScroll = document.body.scrollHeight - window.innerHeight - startScroll;
+    // 只在滾動位置進入 .wrapper 區域時執行動畫
+    if (scrollPosition >= wrapperStart && scrollPosition <= (wrapperStart + wrapperHeight)) {
+        var totalWidth = document.querySelector('.spot_bg_show').scrollWidth - window.innerWidth;
+        var moveX = ((scrollPosition - wrapperStart) / wrapperHeight) * totalWidth;
 
-        // 當滾動距離大於 150px 時，計算移動的比例
-        var movePercentage = (scrollPosition - startScroll) / maxScroll;
-
-        // 計算移動距離（這裡的 800 是示例值，可以根據實際內容調整）
-        var moveX = movePercentage * 1800;  // 可以調整這個數值來控制移動的範圍
-
-        // 應用 GSAP 動畫，移動 `.spot_bg_show`
-        gsap.to('.spot_bg_show', {x: -moveX}); // 向左移動
-    } else {
-        // 當滾動距離小於或等於 150px 時，確保圖片位置不變
+        // 根據滾動比例移動圖片
+        gsap.to('.spot_bg_show', {x: -moveX, ease: "none"});
+    }else {
         gsap.to('.spot_bg_show', {x: 0});
     }
 });
