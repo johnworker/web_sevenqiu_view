@@ -246,20 +246,28 @@ License URI: mit
   width: 100%;
   height: 100%;
   display: block;
-  z-index: -1;
 }
 .wrapper .spot_bg {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 .wrapper .spot_bg .spot_bg_show {
   display: flex; /* 使用 flexbox 使圖片水平排列 */
-  overflow-x: hidden; /* 隱藏水平滾動條 */
-  width: 800%;
+  white-space: nowrap; /* 確保所有圖片都在同一行顯示 */
+  width: 400vw;
   min-height: 100%;
 }
-.wrapper .spot_bg .bg {
+.wrapper .spot_bg .infoma_box {
+  width: 100%;
+}
+.wrapper .spot_bg .infoma_box .wave_bg {
+  position: absolute;
+}
+.wrapper .spot_bg .infoma_box .wave_bg .top_wave {
+  width: 700px;
+  height: 1200px;
+}
+.wrapper .spot_bg .infoma_box .bg {
   flex-shrink: 0; /* 防止圖片在 flex 容器中縮放 */
   width: auto; /* 圖片自然寬度 */
   height: 1200px; /* 設定高度為容器高度 */

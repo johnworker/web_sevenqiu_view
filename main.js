@@ -1,43 +1,11 @@
 
-// // wrapper區
-// $(document).ready(function() {
-//     var $slider = $('.spot_bg_show');
-//     $slider.slick({
-//         initialSlide: 0,
-//         infinite: false,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         vertical: false,
-//         arrows: false,
-//         draggable: false,
-//         rtl: false,
-//         autoplay: false,
-//         speed: 600
-//     });
-
-//     var scrollTrigger = 450;
-//     var totalSlides = $slider.slick('getSlick').slideCount;
-
-//     $(window).scroll(function() {
-//         var st = $(this).scrollTop();
-//         var relativeScroll = st - scrollTrigger;
-        
-//         if (st >= scrollTrigger) {
-//             var slideIndex = Math.max(0, Math.min(Math.floor(relativeScroll / (1000 / totalSlides)), totalSlides - 1));
-//             $slider.slick('slickGoTo', slideIndex, false);
-//         } else {
-//             $slider.slick('slickGoTo', 0, true); // 保持在第一張圖片
-//         }
-//     });
-// });
-
-
-// wrapper test
+// wrapper區
 document.addEventListener('scroll', function() {
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     var wrapperStart = document.querySelector('.wrapper').offsetTop;
     var wrapperHeight = document.querySelector('.wrapper').offsetHeight;
     var startScroll = 150; // 將觸發點設定為 150px
+    
 
     // 只在滾動位置進入 .wrapper 區域時執行動畫
     if (scrollPosition >= wrapperStart && scrollPosition <= (wrapperStart + wrapperHeight)) {
@@ -50,6 +18,9 @@ document.addEventListener('scroll', function() {
         gsap.to('.spot_bg_show', {x: 0});
     }
 });
+
+
+// wrapper區測試
 
 
 // recommend區
