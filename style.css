@@ -23,7 +23,7 @@ License URI: mit
   top: 0;
   left: 0;
   right: 0;
-  height: 6rem;
+  height: 7rem;
   z-index: 9999;
   background-color: #ebebeb;
   overflow-y: hidden;
@@ -36,12 +36,13 @@ License URI: mit
 .header_load .inter_box .header_logo {
   margin: 0 10px;
   overflow: hidden;
+  padding-top: 10px;
 }
 .header_load .inter_box .header_logo a {
   display: inline-block;
 }
 .header_load .inter_box .header_logo a img {
-  width: 180px;
+  width: 130px;
   display: block;
   margin: 0 20px;
 }
@@ -71,9 +72,10 @@ License URI: mit
 .header_load .inter_box nav ul li a {
   outline: none;
   text-decoration: none;
-  line-height: 7;
+  line-height: 67;
   padding-right: 10px;
   display: block;
+  font-size: 20px;
   color: #919191;
 }
 .header_load .inter_box nav ul li a:hover {
