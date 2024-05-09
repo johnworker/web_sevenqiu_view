@@ -530,7 +530,7 @@ License URI: mit
   height: 100vh;
 }
 .process_bg .process_title {
-  margin-top: 200px;
+  margin: 200px 0 0 50px;
 }
 .process_bg .process_bigbox {
   display: flex;
