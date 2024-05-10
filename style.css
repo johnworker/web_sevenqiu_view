@@ -501,7 +501,7 @@ License URI: mit
 .about_bg .about_info {
   width: 100%;
   display: inline-block;
-  margin-top: 200px;
+  margin-top: 180px;
 }
 .about_bg .about_info h2 {
   padding: 20px 0;
@@ -533,10 +533,11 @@ License URI: mit
 .process_bg .process_title {
   margin: 180px 0 0 50px;
   font-size: 36px;
+  padding: 20px 0;
 }
 .process_bg .process_bigbox {
   display: flex;
-  margin: 150px auto;
+  margin: 100px auto 0;
   -moz-column-gap: 10px;
        column-gap: 10px;
   max-width: 1310px;
