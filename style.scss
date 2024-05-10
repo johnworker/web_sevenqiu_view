@@ -614,6 +614,7 @@ $color_dark_gray: #383838;
 .process_bg {
     width: 100%;
     height: 100vh;
+    overflow-y: hidden;
 
     .process_title {
         margin: 200px 0 0 50px;
