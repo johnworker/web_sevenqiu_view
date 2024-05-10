@@ -610,6 +610,51 @@ $color_dark_gray: #383838;
     }
 }
 
+// 作品案例
+.work_bg {
+    width: 100%;
+    height: 140vh;
+    background: $color_white;
+    padding: 0 64px;
+    overflow-y: hidden;
+
+    h2{
+        margin: 180px 0 50px;
+        width: 100%;
+        font-size: 36px;
+        padding: 20px 0;
+    }
+
+    .work_info_box{
+        display: flex;
+        margin-top: 100px;
+        column-gap: 100px;
+
+        .work_img{
+            width: 100%;
+            height: auto;
+
+            img{
+                width: 395px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .work_text{
+            width: 100%;
+
+            h3{
+                padding: 20px 0;
+            }
+
+            p{
+                line-height: 2;
+            }
+        }
+    }
+}
+
 // 服務流程頁面
 .process_bg {
     width: 100%;
