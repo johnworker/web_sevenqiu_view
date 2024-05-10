@@ -531,7 +531,8 @@ License URI: mit
   overflow-y: hidden;
 }
 .process_bg .process_title {
-  margin: 200px 0 0 50px;
+  margin: 180px 0 0 50px;
+  font-size: 36px;
 }
 .process_bg .process_bigbox {
   display: flex;
@@ -547,6 +548,10 @@ License URI: mit
 .process_bg .process_bigbox .process_minibox .process_headline {
   text-align: center;
   padding: 20px 0;
+}
+.process_bg .process_bigbox .process_minibox .process_pic {
+  margin: 0 auto;
+  display: block;
 }
 .process_bg .process_bigbox .liner {
   display: flex;

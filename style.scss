@@ -617,7 +617,8 @@ $color_dark_gray: #383838;
     overflow-y: hidden;
 
     .process_title {
-        margin: 200px 0 0 50px;
+        margin: 180px 0 0 50px;
+        font-size: 36px;
     }
 
     .process_bigbox {
@@ -633,6 +634,11 @@ $color_dark_gray: #383838;
             .process_headline{
                 text-align: center;
                 padding: 20px 0;
+            }
+
+            .process_pic{
+                margin: 0 auto;
+                display: block;
             }
         }
 
