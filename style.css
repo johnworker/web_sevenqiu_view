@@ -536,7 +536,7 @@ License URI: mit
 }
 .process_bg .process_bigbox {
   display: flex;
-  margin: 200px auto;
+  margin: 150px auto;
   -moz-column-gap: 10px;
        column-gap: 10px;
   max-width: 1310px;
