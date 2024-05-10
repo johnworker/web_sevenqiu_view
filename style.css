@@ -544,6 +544,7 @@ License URI: mit
 .process_bg .process_bigbox .process_minibox {
   margin: 0 auto;
   justify-items: center;
+  width: 100%;
 }
 .process_bg .process_bigbox .process_minibox .process_headline {
   text-align: center;
@@ -553,6 +554,21 @@ License URI: mit
   margin: 0 auto;
   display: block;
 }
+.process_bg .process_bigbox .process_minibox .process_pic .pic_icon {
+  margin: 0 auto;
+  display: block;
+}
+.process_bg .process_bigbox .process_minibox .process_text {
+  width: 100%;
+}
+.process_bg .process_bigbox .process_minibox .process_text h3 {
+  text-align: center;
+  padding: 10px;
+}
+.process_bg .process_bigbox .process_minibox .process_text p {
+  text-align: center;
+  padding: 10px;
+}
 .process_bg .process_bigbox .liner {
   display: flex;
   flex-direction: column;
@@ -561,8 +577,8 @@ License URI: mit
   content: "";
   height: 1px;
   background-color: rgba(31, 38, 36, 0.4);
-  top: 50px;
-  width: 200px;
+  top: 90px;
+  width: 400px;
 }
 
 footer {
