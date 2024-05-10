@@ -544,22 +544,25 @@ License URI: mit
   -moz-column-gap: 100px;
        column-gap: 100px;
 }
-.work_bg .work_info_box .work_img {
+.work_bg .work_info_box .work_info {
   width: 100%;
+}
+.work_bg .work_info_box .work_info .work_img {
+  width: 395px;
   height: auto;
 }
-.work_bg .work_info_box .work_img img {
+.work_bg .work_info_box .work_info .work_img img {
   width: 395px;
   display: block;
   margin: 0 auto;
 }
-.work_bg .work_info_box .work_text {
+.work_bg .work_info_box .work_info .work_text {
   width: 100%;
 }
-.work_bg .work_info_box .work_text h3 {
+.work_bg .work_info_box .work_info .work_text h3 {
   padding: 20px 0;
 }
-.work_bg .work_info_box .work_text p {
+.work_bg .work_info_box .work_info .work_text p {
   line-height: 2;
 }
 
