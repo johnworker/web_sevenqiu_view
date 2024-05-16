@@ -566,6 +566,39 @@ License URI: mit
   line-height: 2;
 }
 
+.service_bg {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  padding: 0 64px;
+  display: flex;
+}
+.service_bg .service_info {
+  width: 100%;
+  display: inline-block;
+  margin-top: 180px;
+}
+.service_bg .service_info h2 {
+  padding: 20px 0;
+  font-size: 36px;
+}
+.service_bg .service_info p {
+  padding: 0 50px 0 0;
+  line-height: 2.4;
+  font-size: 22px;
+}
+.service_bg .service_img {
+  overflow-y: hidden;
+  width: 100%;
+  height: 400px;
+  margin-top: 200px;
+}
+.service_bg .service_img .service_box_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+
 .process_bg {
   width: 100%;
   height: 100vh;

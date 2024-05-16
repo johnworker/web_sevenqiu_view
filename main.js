@@ -74,3 +74,13 @@ $(function () {
         }
     });
 });
+
+
+// 貓頭鷹輪播系統(OwlCarousel)
+$('.service_img').owlCarousel({
+    items:1,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true
+});

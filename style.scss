@@ -659,6 +659,45 @@ $color_dark_gray: #383838;
     }
 }
 
+// 為您服務頁面
+.service_bg {
+    width: 100%;
+    height: 100vh;
+    background: $color_white;
+    padding: 0 64px;
+    display: flex;
+
+    .service_info {
+        width: 100%;
+        display: inline-block;
+        margin-top: 180px;
+
+        h2 {
+            padding: 20px 0;
+            font-size: 36px;
+        }
+
+        p {
+            padding: 0 50px 0 0;
+            line-height: 2.4;
+            font-size: 22px;
+        }
+    }
+
+    .service_img {
+        overflow-y: hidden;
+        width: 100%;
+        height: 400px;
+        margin-top: 200px;
+
+        .service_box_img {
+            object-fit: cover;
+            //width: 100%;
+            height: auto;
+        }
+    }
+}
+
 // 服務流程頁面
 .process_bg {
     width: 100%;
