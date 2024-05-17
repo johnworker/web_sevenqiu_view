@@ -76,11 +76,14 @@ $(function () {
 });
 
 
-// 貓頭鷹輪播系統(OwlCarousel)
-$('.service_img').owlCarousel({
-    items:1,
-    margin:0,
-    autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true
-});
+// 輪播系統(SlickCarousel)
+$('.service_img').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    pauseOnHover: true,
+    arrows: false
+  });

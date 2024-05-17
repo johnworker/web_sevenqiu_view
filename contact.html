@@ -50,64 +50,38 @@
                 <ul>
                     <li>
                         <img src="./images/mark_small_orange.png" alt="">
-                        <a href="">Contact</a>
+                        <a href="./contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+  <!-- 表單 -->
+  <section class="contact_form">
+    <h2 class="list title-big" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500">聯絡我</h2>
+    <!-- 表單元素 action="" 傳遞給後端頁面，通常是 XXX.php -->
+    <!-- 要設定 input type="submit" 表單資料才會傳到後端-->
+    <!-- 方法：傳送資料的方式 -->
+    <!-- GET 曝光表單資料 -->
+    <!-- POST 不會曝光表單資料 -->
+    <form action="javascript:Goform();">
+        <label for="morning">姓名</label><br>
+        <input type="text" name="name" placeholder="請輸入您的姓名" required>
+        <label for="morning">電話</label><br>
+        <input type="number" name="phone" placeholder="請輸入您的電話" required>
+        <label for="morning">電子郵件</label><br>
+        <input type="email" name="email" placeholder="請輸入您的信箱">
+        <input type="radio" id="morning" name="fav_language" value="早上">
+        <label for="morning">早上</label><br>
+        <input type="radio" id="afternoon" name="fav_language" value="下午">
+        <label for="afternoon">下午</label><br>
+        <textarea placeholder="輸入備註" type="text" name="msg"></textarea>
+        <input type="submit" value="送出" class="btn">
+    </form>
 
-    <!-- 主要內容 -->
-    <div class="main">
-        <div class="work_bg">
-            <h2>WORK</h2>
-            <div class="work_info_box">
-                <div class="work_info">
-                    <div class="work_img">
-                        <img src="./images/sell_three.jpg" alt="">
-                    </div>
-                    <div class="work_text">
-                        <h3>柒秋</h3>
-                        <p>柒秋是一家整合行銷公司，致力於為客戶提供全方位的行銷解決方案。
-                            我們擁有一支經驗豐富的專業團隊，對市場趨勢和消費者行為有著深入的洞察。
-                            我們擅長整合各種行銷傳播工具和手法，為客戶量身打造高效的行銷策略，
-                            並且承諾協助您的企業達成業績翻倍的績效，期待與您開啟有效的行銷執行旅程。
-                        </p>
-                    </div>
-                </div>
+</section>
 
-                <div class="work_info">
-                    <div class="work_img">
-                        <img src="./images/sell_four.jpg" alt="">
-                    </div>
-                    <div class="work_text">
-                        <h3>柒秋</h3>
-                        <p>柒秋是一家整合行銷公司，致力於為客戶提供全方位的行銷解決方案。
-                            我們擁有一支經驗豐富的專業團隊，對市場趨勢和消費者行為有著深入的洞察。
-                            我們擅長整合各種行銷傳播工具和手法，為客戶量身打造高效的行銷策略，
-                            並且承諾協助您的企業達成業績翻倍的績效，期待與您開啟有效的行銷執行旅程。
-                        </p>
-                    </div>
-                </div>
-
-                <div class="work_info">
-                    <div class="work_img">
-                        <img src="./images/sell_one.jpg" alt="">
-                    </div>
-                    <div class="work_text">
-                        <h3>柒秋</h3>
-                        <p>柒秋是一家整合行銷公司，致力於為客戶提供全方位的行銷解決方案。
-                            我們擁有一支經驗豐富的專業團隊，對市場趨勢和消費者行為有著深入的洞察。
-                            我們擅長整合各種行銷傳播工具和手法，為客戶量身打造高效的行銷策略，
-                            並且承諾協助您的企業達成業績翻倍的績效，期待與您開啟有效的行銷執行旅程。
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
 
     <!-- 頁尾 -->
     <footer>

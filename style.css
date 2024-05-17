@@ -728,4 +728,59 @@ footer .big_container .mini_container .copy {
   right: 30px;
   bottom: 30px;
   cursor: pointer;
+}
+
+.contact_form {
+  width: 100%;
+  height: 100%;
+}
+.contact_form .list {
+  padding: 20px 0;
+  margin: 180px 0 0 50px;
+  width: 100%;
+  font-size: 36px;
+}
+.contact_form form {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px 0 100px;
+}
+@media screen and (max-width: 960px) {
+  .contact_form form {
+    width: 100%;
+    padding: 20px 20px 100px;
+  }
+}
+.contact_form form label {
+  font-weight: 700;
+  font-size: 20px;
+}
+.contact_form form input {
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  background: white;
+}
+@media screen and (max-width: 960px) {
+  .contact_form form input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.contact_form form input::-moz-placeholder {
+  color: #787878;
+  font-size: 14px;
+}
+.contact_form form input::placeholder {
+  color: #787878;
+  font-size: 14px;
+}
+.contact_form form input[type=text], .contact_form form [type=number], .contact_form form [type=email] {
+  width: 100%;
+}
+.contact_form form textarea {
+  width: 100%;
+  height: 300px;
+  margin: 30px 0;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
