@@ -453,16 +453,36 @@ License URI: mit
   height: 100%;
   width: 30000px;
 }
+.intelligence .info_content .showboxone {
+  top: 0;
+}
+.intelligence .info_content .showboxtwo {
+  top: 400px;
+}
 .intelligence .info_content .info_slider {
   position: absolute;
   -moz-column-gap: 1.625rem;
        column-gap: 1.625rem;
+}
+.intelligence .info_content .info_slider .showboxone {
+  position: absolute;
+  top: 0 !important;
+}
+.intelligence .info_content .info_slider .showboxtwo {
+  position: absolute;
+  top: 400px !important;
 }
 .intelligence .info_content .info_slider .info_post {
   display: grid;
   grid-template-columns: 27% 27% 27% 27%;
   -moz-column-gap: 1.625rem;
        column-gap: 1.625rem;
+}
+.intelligence .info_content .info_slider .info_post .show_oboxs {
+  margin: 10px;
+}
+.intelligence .info_content .info_slider .info_post .show_tboxs {
+  margin: 50px;
 }
 .intelligence .info_content .info_slider .info_post .info_show {
   width: 800px;

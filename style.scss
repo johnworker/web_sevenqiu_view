@@ -533,14 +533,40 @@ $color-gray: #787878;
         height: 100%;
         width: 30000px;
 
+        .showboxone{
+            top: 0;
+        }
+
+        .showboxtwo{
+            top: 400px;
+        }
+
         .info_slider {
             position: absolute;
             column-gap: 1.625rem;
+
+            .showboxone{
+                position: absolute;
+                top: 0 !important;
+            }
+
+            .showboxtwo{
+                position: absolute;
+                top: 400px !important;
+            }
 
             .info_post {
                 display: grid;
                 grid-template-columns: 27% 27% 27% 27%;
                 column-gap: 1.625rem;
+
+                .show_oboxs{
+                    margin: 10px;
+                }
+
+                .show_tboxs{
+                    margin: 50px;
+                }
 
                 .info_show {
                     width: 800px;
