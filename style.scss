@@ -289,6 +289,7 @@ $color-gray: #787878;
     width: 100%;
     height: 100%;
     display: block;
+    overflow-x: hidden;
 
     .spot_bg {
         width: 100%;
@@ -298,18 +299,20 @@ $color-gray: #787878;
             display: flex; /* 使用 flexbox 使圖片水平排列 */
             //overflow-x: hidden; /* 隱藏水平滾動條 */
             white-space: nowrap; /* 確保所有圖片都在同一行顯示 */
-            width: calc(100vw * 4); // 假設有 8 張圖片，每張圖片寬度等於容器寬度
+            // width: calc(100vw * 4); // 假設有 8 張圖片，每張圖片寬度等於容器寬度
+            width: 400%; /* 寬度設置為4倍容器寬度 */
             min-height: 100%; // 確保區域高度充足
         }
 
         .infoma_box {
-            width: 100%;
+            // width: 100%;
+            width: 25%; /* 每個區塊寬度為容器寬度的 1/4 */
 
             .wave_bg {
                 position: absolute;
 
                 .top_wave {
-                    width: 700px;
+                    width: 50%;
                     height: 1200px;
                 }
             }
@@ -324,6 +327,7 @@ $color-gray: #787878;
     }
 }
 
+// 推薦作品區
 .recommend {
     padding-top: 5rem;
     width: 100%;
@@ -492,13 +496,15 @@ $color-gray: #787878;
     .show_textarea {
         position: relative;
         display: grid;
-        grid-template-columns: 15% 25% 60%;
+        grid-template-columns: 12% 28% 60%;
         height: 100px;
         margin: 50px 100px 20px;
+        width: 100%;
 
         h2 {
             display: block;
             margin: 0 auto;
+            width: 200px;
 
             img {
                 display: block;
@@ -533,11 +539,11 @@ $color-gray: #787878;
         height: 100%;
         width: 30000px;
 
-        .showboxone{
+        .showboxone {
             top: 0;
         }
 
-        .showboxtwo{
+        .showboxtwo {
             top: 400px;
         }
 
@@ -545,12 +551,12 @@ $color-gray: #787878;
             position: absolute;
             column-gap: 1.625rem;
 
-            .showboxone{
+            .showboxone {
                 position: absolute;
                 top: 0 !important;
             }
 
-            .showboxtwo{
+            .showboxtwo {
                 position: absolute;
                 top: 400px !important;
             }
@@ -560,11 +566,11 @@ $color-gray: #787878;
                 grid-template-columns: 27% 27% 27% 27%;
                 column-gap: 1.625rem;
 
-                .show_oboxs{
+                .show_oboxs {
                     margin: 10px;
                 }
 
-                .show_tboxs{
+                .show_tboxs {
                     margin: 50px;
                 }
 
@@ -607,15 +613,18 @@ $color-gray: #787878;
 // 關於我們頁面
 .about_bg {
     width: 100%;
-    height: 100vh;
+    height: 135vh;
     background: $color_white;
     padding: 0 64px;
-    display: flex;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    overflow-y: hidden;
 
     .about_info {
         width: 100%;
         display: inline-block;
         margin-top: 180px;
+        height: 100%;
 
         h2 {
             padding: 20px 0;
@@ -629,16 +638,88 @@ $color-gray: #787878;
         }
     }
 
-    .about_img {
-        overflow-y: hidden;
-        width: 100%;
-        height: 400px;
-        margin-top: 200px;
+    .gallery_about_img {
+        position: relative;
+        width: 760px;
+        height: 305px;
+        margin: 75px auto 0;
+        overflow: hidden;
 
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: auto;
+        &:hover :not(div[data-pos="0"], img) {
+            cursor: pointer;
+        }
+
+        & .about_item {
+            position: absolute;
+            width: 175px;
+            height: 150px;
+            overflow: hidden;
+            transition:
+                transform 0.9s,
+                width 0.9s,
+                height 0.9s;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        & div[data-pos="0"] {
+            width: 400px;
+            height: inherit;
+            z-index: 10;
+        }
+    }
+
+    div[data-pos="0"] {
+        transform: translate(0, 0);
+    }
+    div[data-pos="1"] {
+        transform: translate(405px, 0);
+    }
+    div[data-pos="2"] {
+        transform: translate(585px, 0);
+    }
+    div[data-pos="3"] {
+        transform: translate(405px, 155px);
+    }
+    div[data-pos="4"] {
+        transform: translate(585px, 155px);
+    }
+
+    @media (width < 800px) {
+        .gallery_about_img {
+            width: 405px;
+            height: 660px;
+
+            & .about_item {
+                width: 200px;
+                height: 150px;
+            }
+
+            & div[data-pos="0"] {
+                width: inherit;
+                height: 350px;
+                z-index: 10;
+            }
+        }
+
+        div[data-pos="0"] {
+            transform: translate(0, 0);
+        }
+        div[data-pos="1"] {
+            transform: translate(0, 355px);
+        }
+        div[data-pos="2"] {
+            transform: translate(0, 510px);
+        }
+        div[data-pos="3"] {
+            transform: translate(205px, 355px);
+        }
+        div[data-pos="4"] {
+            transform: translate(205px, 510px);
         }
     }
 }
@@ -886,6 +967,7 @@ footer {
     right: 30px;
     bottom: 30px;
     cursor: pointer;
+    display: none;
 }
 
 // 聯絡LEO
@@ -903,14 +985,14 @@ footer {
     form {
         width: 1280px;
         margin: 0 auto;
-        padding: 20px 0 100px;
+        padding: 20px 30px 100px;
 
         @media screen and (max-width: $tablets) {
             width: 100%;
             padding: 20px 20px 100px;
         }
 
-        label{
+        label {
             font-weight: 700;
             font-size: 20px;
         }
@@ -932,10 +1014,21 @@ footer {
             }
         }
 
-        input[type=text],[type=number],[type=email] {
+        input[type="text"],
+        [type="number"],
+        [type="email"],
+        [type="submit"] {
             width: 100%;
-        }    
+        }
 
+        input[type="submit"] {
+            font-size: 20px;
+            font-weight: 900;
+
+            &:hover {
+                background: #877300;
+            }
+        }
         textarea {
             width: 100%;
             height: 300px;
