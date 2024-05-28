@@ -613,28 +613,47 @@ $color-gray: #787878;
 // 關於我們頁面
 .about_bg {
     width: 100%;
-    height: 135vh;
+    height: 160vh;
     background: $color_white;
     padding: 0 64px;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 60% 40%;
     overflow-y: hidden;
 
-    .about_info {
+    .about_info_box {
         width: 100%;
-        display: inline-block;
-        margin-top: 180px;
-        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        overflow: hidden;
 
-        h2 {
-            padding: 20px 0;
-            font-size: 36px;
+        .about_info {
+            width: 100%;
+            display: inline-block;
+            margin-top: 180px;
+            height: 100%;
+    
+            h2 {
+                padding: 20px 0;
+                font-size: 36px;
+            }
+    
+            p {
+                padding: 0 50px 0 0;
+                line-height: 2.4;
+                font-size: 22px;
+            }
         }
 
-        p {
-            padding: 0 50px 0 0;
-            line-height: 2.4;
-            font-size: 22px;
+        .about_pic {
+            width: 800px;
+            height: 420px;
+            margin: 200px 50px 0 0;
+
+            img {
+                width: 800px;
+                height: 420px;    
+                object-fit: cover;
+            }
         }
     }
 
@@ -642,7 +661,7 @@ $color-gray: #787878;
         position: relative;
         width: 760px;
         height: 305px;
-        margin: 75px auto 0;
+        margin: 100px auto 0;
         overflow: hidden;
 
         &:hover :not(div[data-pos="0"], img) {
@@ -884,6 +903,7 @@ footer {
     background: $color_background;
     padding: 50px;
     width: 100%;
+    margin-top: 50px;
 
     .big_container {
         display: flex;

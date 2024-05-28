@@ -516,33 +516,50 @@ License URI: mit
 
 .about_bg {
   width: 100%;
-  height: 135vh;
+  height: 160vh;
   background: #ffffff;
   padding: 0 64px;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 60% 40%;
   overflow-y: hidden;
 }
-.about_bg .about_info {
+.about_bg .about_info_box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+.about_bg .about_info_box .about_info {
   width: 100%;
   display: inline-block;
   margin-top: 180px;
   height: 100%;
 }
-.about_bg .about_info h2 {
+.about_bg .about_info_box .about_info h2 {
   padding: 20px 0;
   font-size: 36px;
 }
-.about_bg .about_info p {
+.about_bg .about_info_box .about_info p {
   padding: 0 50px 0 0;
   line-height: 2.4;
   font-size: 22px;
+}
+.about_bg .about_info_box .about_pic {
+  width: 800px;
+  height: 420px;
+  margin: 200px 50px 0 0;
+}
+.about_bg .about_info_box .about_pic img {
+  width: 800px;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about_bg .gallery_about_img {
   position: relative;
   width: 760px;
   height: 305px;
-  margin: 75px auto 0;
+  margin: 100px auto 0;
   overflow: hidden;
 }
 .about_bg .gallery_about_img:hover :not(div[data-pos="0"], img) {
@@ -747,6 +764,7 @@ footer {
   background: #ebebeb;
   padding: 50px;
   width: 100%;
+  margin-top: 50px;
 }
 footer .big_container {
   display: flex;
