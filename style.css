@@ -461,17 +461,27 @@ License URI: mit
   position: relative;
   top: 100px;
 }
+@media screen and (max-width: 767px) {
+  .recommend .wrapper_service {
+    top: 25px;
+  }
+}
 .recommend .wrapper_service .recommend_text {
   display: block;
   margin: 0 auto;
   padding-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .recommend .wrapper_service .recommend_text {
+    padding-top: 0;
+  }
 }
 .recommend .wrapper_service .recommend_text img {
   margin: 0 auto;
   display: block;
   position: absolute;
   left: 50%;
-  top: 25px;
+  top: -15px;
   z-index: 3;
 }
 .recommend .wrapper_service .recommend_text h2 {
