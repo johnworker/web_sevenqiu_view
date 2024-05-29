@@ -225,6 +225,10 @@ $color-gray: #787878;
         position: relative;
         overflow-y: hidden;
 
+        @media screen and (max-width: $mobile) {
+            height: 85vh;
+        }                    
+
         .text_box {
             position: relative;
             width: 100%;
@@ -232,6 +236,10 @@ $color-gray: #787878;
             top: 200px;
             left: -100px;
             overflow-y: hidden;
+            
+            @media screen and (max-width: $mobile) {
+                left: 0;
+            }
 
             .promo_one {
                 position: absolute;
@@ -241,6 +249,11 @@ $color-gray: #787878;
                 color: $color_dark_gray;
                 z-index: 1;
                 letter-spacing: 8px;
+
+                @media screen and (max-width: $mobile) {
+                    left: 30px;
+                    top: 50px;
+                }    
             }
 
             .promo_two {
@@ -251,6 +264,11 @@ $color-gray: #787878;
                 color: $color_dark_gray;
                 z-index: 1;
                 letter-spacing: 8px;
+
+                @media screen and (max-width: $mobile) {
+                    left: 54px;
+                    top: 150px;
+                }                
             }
         }
 
@@ -309,6 +327,21 @@ $color-gray: #787878;
             transform: translateX(2%);
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        top: 114px;
+        transform: translateX(-40%);
+
+        @keyframes slide {
+            from {
+                transform: translateX(-200%);
+            }
+            to {
+                transform: translateX(-40%);
+            }
+        }    
+    }
+
 }
 
 .line_one {
@@ -322,6 +355,12 @@ $color-gray: #787878;
     animation-timing-function: linear;
     animation-delay: 2s;
     animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
+
+    @media screen and (max-width: $mobile) {
+        left: 26px;
+        top: 105px;
+    }    
+
 }
 
 @keyframes quickliner {
@@ -347,6 +386,12 @@ $color-gray: #787878;
     animation-timing-function: linear;
     animation-delay: 2.8s;
     animation-fill-mode: forwards; /* 重要：確保動畫結束後保持結束狀態 */
+
+    @media screen and (max-width: $mobile) {
+        left: 112px;
+        top: 205px;
+    }                
+
 }
 
 @keyframes aliner {
@@ -382,6 +427,10 @@ $color-gray: #787878;
             opacity: 1;
         }
     }
+
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }                
 }
 
 .line_wave_bottom {
@@ -389,6 +438,11 @@ $color-gray: #787878;
     position: absolute;
     left: 0;
     bottom: 0;
+
+    @media screen and (max-width: $mobile) {
+        width: 300px;
+    }                
+
 }
 
 // 卷軸移動區塊
@@ -422,6 +476,11 @@ $color-gray: #787878;
                 .top_wave {
                     width: 50%;
                     height: 1200px;
+
+                    @media screen and (max-width: $mobile) {
+                        display: none;
+                    }                
+                
                 }
             }
 
