@@ -46,6 +46,12 @@ License URI: mit
   display: block;
   margin: 0 20px;
 }
+@media screen and (max-width: 767px) {
+  .header_load .inter_box .header_logo a img {
+    width: 80px;
+    margin: 5px 10px;
+  }
+}
 .header_load .inter_box nav {
   margin: 0 auto;
   width: 100%;
