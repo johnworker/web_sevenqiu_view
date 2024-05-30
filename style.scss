@@ -864,6 +864,7 @@ $color-gray: #787878;
     @media screen and (max-width: $mobile) {
         padding: 0 20px;
         width: 375px;
+        height: 230vh;
     }
 
     .about_info_box {
@@ -876,7 +877,7 @@ $color-gray: #787878;
         }
 
         @media screen and (max-width: $mobile) {
-            grid-template-rows: 65% 35%;
+            grid-template-rows: 70% 30%;
             grid-gap: 20px;
         }
 
@@ -895,6 +896,10 @@ $color-gray: #787878;
                 padding: 0 50px 0 0;
                 line-height: 2.4;
                 font-size: 22px;
+
+                @media screen and (max-width: $mobile) {
+                    width: 375px;
+                }
             }
         }
 
@@ -905,7 +910,7 @@ $color-gray: #787878;
 
             @media screen and (max-width: $mobile) {
                 margin: 0 50px 0 0;
-            }    
+            }
 
             img {
                 width: 800px;
@@ -974,6 +979,11 @@ $color-gray: #787878;
             & .about_item {
                 width: 200px;
                 height: 150px;
+
+                @media screen and (max-width: $mobile) {
+                    width: 150px;
+                    height: 110px;
+                }
             }
 
             & div[data-pos="0"] {
@@ -988,12 +998,23 @@ $color-gray: #787878;
         }
         div[data-pos="1"] {
             transform: translate(0, 355px);
+
+            @media screen and (max-width: $mobile) {
+                transform: translate(0, 370px);
+            }
+
         }
         div[data-pos="2"] {
             transform: translate(0, 510px);
+
         }
         div[data-pos="3"] {
             transform: translate(205px, 355px);
+
+            @media screen and (max-width: $mobile) {
+                transform: translate(205px, 370px);
+            }
+
         }
         div[data-pos="4"] {
             transform: translate(205px, 510px);
