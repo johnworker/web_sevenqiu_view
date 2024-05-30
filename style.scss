@@ -1315,6 +1315,10 @@ footer {
                 margin-bottom: 20px;
             }
 
+            @media screen and (max-width: $tablets) {
+                width: 20px;
+            }
+
             &::placeholder {
                 color: $color-gray;
                 font-size: 14px;

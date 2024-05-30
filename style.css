@@ -1191,6 +1191,11 @@ footer .big_container .mini_container .copy {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 960px) {
+  .contact_form form input {
+    width: 20px;
+  }
+}
 .contact_form form input::-moz-placeholder {
   color: #787878;
   font-size: 14px;
