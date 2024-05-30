@@ -638,7 +638,7 @@ $color-gray: #787878;
 
                         @media screen and (max-width: $mobile) {
                             margin-top: 10px;
-                        }                
+                        }
 
                         &:hover {
                             transform: rotate(1deg);
@@ -655,7 +655,7 @@ $color-gray: #787878;
                             @media screen and (max-width: $mobile) {
                                 width: 250px;
                                 height: 100px;
-                            }                
+                            }
 
                             &:hover {
                                 transform: rotate(1deg);
@@ -672,7 +672,7 @@ $color-gray: #787878;
 
                             @media screen and (max-width: $mobile) {
                                 height: 230px;
-                            }                
+                            }
                         }
                     }
 
@@ -707,7 +707,7 @@ $color-gray: #787878;
 
     @media screen and (max-width: $mobile) {
         height: 110vh;
-    }    
+    }
 
     .show_textarea {
         position: relative;
@@ -720,7 +720,7 @@ $color-gray: #787878;
         @media screen and (max-width: $mobile) {
             margin: 20px 30px;
             height: 125px;
-        }    
+        }
 
         h2 {
             display: block;
@@ -745,8 +745,8 @@ $color-gray: #787878;
 
                 @media screen and (max-width: $mobile) {
                     position: absolute;
-                    top: 0;    
-                }            
+                    top: 0;
+                }
             }
         }
 
@@ -763,8 +763,7 @@ $color-gray: #787878;
                 top: 70px;
                 line-height: 1.5;
                 padding-right: 40px;
-            }            
-
+            }
         }
     }
 
@@ -824,7 +823,7 @@ $color-gray: #787878;
 
                     @media screen and (max-width: $mobile) {
                         margin-top: 80px;
-                    }        
+                    }
 
                     .show_img {
                         width: 100%;
@@ -862,11 +861,24 @@ $color-gray: #787878;
     grid-template-rows: 60% 40%;
     overflow-y: hidden;
 
+    @media screen and (max-width: $mobile) {
+        padding: 0 20px;
+        width: 375px;
+    }
+
     .about_info_box {
         width: 100%;
         display: grid;
-        grid-template-columns: 50% 50%;
         overflow: hidden;
+
+        @media screen and (min-width: $mobile) {
+            grid-template-columns: 50% 50%;
+        }
+
+        @media screen and (max-width: $mobile) {
+            grid-template-rows: 65% 35%;
+            grid-gap: 20px;
+        }
 
         .about_info {
             width: 100%;
@@ -890,6 +902,10 @@ $color-gray: #787878;
             width: 800px;
             height: 420px;
             margin: 200px 50px 0 0;
+
+            @media screen and (max-width: $mobile) {
+                margin: 0 50px 0 0;
+            }    
 
             img {
                 width: 800px;
@@ -1149,7 +1165,7 @@ footer {
 
     @media screen and (max-width: $mobile) {
         padding: 35px;
-    }        
+    }
 
     .big_container {
         display: flex;
@@ -1158,7 +1174,7 @@ footer {
 
         @media screen and (max-width: $mobile) {
             display: block;
-        }        
+        }
 
         .mini_container {
             width: 100%;

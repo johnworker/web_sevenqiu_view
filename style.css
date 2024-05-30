@@ -782,11 +782,27 @@ License URI: mit
   grid-template-rows: 60% 40%;
   overflow-y: hidden;
 }
+@media screen and (max-width: 767px) {
+  .about_bg {
+    padding: 0 20px;
+    width: 375px;
+  }
+}
 .about_bg .about_info_box {
   width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
   overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  .about_bg .about_info_box {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about_bg .about_info_box {
+    grid-template-rows: 65% 35%;
+    grid-gap: 20px;
+  }
 }
 .about_bg .about_info_box .about_info {
   width: 100%;
@@ -807,6 +823,11 @@ License URI: mit
   width: 800px;
   height: 420px;
   margin: 200px 50px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .about_bg .about_info_box .about_pic {
+    margin: 0 50px 0 0;
+  }
 }
 .about_bg .about_info_box .about_pic img {
   width: 800px;
