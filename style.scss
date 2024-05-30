@@ -118,7 +118,6 @@ $color-gray: #787878;
                 &.active span:not(:first-child):not(:last-child) {
                     opacity: 0;
                 }
-
             }
             .menu_wrap {
                 position: fixed;
@@ -126,7 +125,7 @@ $color-gray: #787878;
                 right: -100%;
                 top: 0;
                 bottom: 0;
-                background: rgba(255,255,255,0.5);
+                background: rgba(255, 255, 255, 0.5);
                 z-index: 50;
                 padding: 120px 50px 50px 50px;
                 transition: right 0.3s;
@@ -145,7 +144,7 @@ $color-gray: #787878;
                         img {
                             width: 30px;
                             height: 30px;
-                            margin-right: 10px;    
+                            margin-right: 10px;
                         }
 
                         a {
@@ -227,7 +226,7 @@ $color-gray: #787878;
 
         @media screen and (max-width: $mobile) {
             height: 85vh;
-        }                    
+        }
 
         .text_box {
             position: relative;
@@ -236,7 +235,7 @@ $color-gray: #787878;
             top: 200px;
             left: -100px;
             overflow-y: hidden;
-            
+
             @media screen and (max-width: $mobile) {
                 left: 0;
             }
@@ -253,7 +252,7 @@ $color-gray: #787878;
                 @media screen and (max-width: $mobile) {
                     left: 30px;
                     top: 50px;
-                }    
+                }
             }
 
             .promo_two {
@@ -268,7 +267,7 @@ $color-gray: #787878;
                 @media screen and (max-width: $mobile) {
                     left: 54px;
                     top: 150px;
-                }                
+                }
             }
         }
 
@@ -339,9 +338,8 @@ $color-gray: #787878;
             to {
                 transform: translateX(-40%);
             }
-        }    
+        }
     }
-
 }
 
 .line_one {
@@ -359,8 +357,7 @@ $color-gray: #787878;
     @media screen and (max-width: $mobile) {
         left: 26px;
         top: 105px;
-    }    
-
+    }
 }
 
 @keyframes quickliner {
@@ -390,8 +387,7 @@ $color-gray: #787878;
     @media screen and (max-width: $mobile) {
         left: 112px;
         top: 205px;
-    }                
-
+    }
 }
 
 @keyframes aliner {
@@ -430,7 +426,7 @@ $color-gray: #787878;
 
     @media screen and (max-width: $mobile) {
         display: none;
-    }                
+    }
 }
 
 .line_wave_bottom {
@@ -441,8 +437,7 @@ $color-gray: #787878;
 
     @media screen and (max-width: $mobile) {
         width: 300px;
-    }                
-
+    }
 }
 
 // 卷軸移動區塊
@@ -479,8 +474,7 @@ $color-gray: #787878;
 
                     @media screen and (max-width: $mobile) {
                         display: none;
-                    }                
-                
+                    }
                 }
             }
 
@@ -504,6 +498,10 @@ $color-gray: #787878;
     z-index: 1;
     overflow: hidden;
 
+    @media screen and (max-width: $mobile) {
+        height: 90vh;
+    }
+
     .deco {
         position: absolute;
         top: 20px;
@@ -519,8 +517,8 @@ $color-gray: #787878;
         top: 100px;
 
         @media screen and (max-width: $mobile) {
-            top: 25px;
-        }                
+            top: 50px;
+        }
 
         .recommend_text {
             display: block;
@@ -529,21 +527,33 @@ $color-gray: #787878;
 
             @media screen and (max-width: $mobile) {
                 padding-top: 0;
-            }                
+                height: 300px;
+                overflow: hidden;
+            }
 
             img {
                 margin: 0 auto;
                 display: block;
                 position: absolute;
                 left: 50%;
-                top: -15px;
+                top: 35px;
                 z-index: 3;
+
+                @media screen and (max-width: $mobile) {
+                    top: 0;
+                }
             }
 
             h2 {
                 text-align: center;
                 z-index: 3;
                 position: relative;
+                top: 0;
+
+                @media screen and (max-width: $mobile) {
+                    top: 15px;
+                    height: 300px;
+                }
 
                 span {
                     display: block;
@@ -555,6 +565,13 @@ $color-gray: #787878;
 
             p {
                 text-align: center;
+
+                @media screen and (max-width: $mobile) {
+                    position: absolute;
+                    top: 200px;
+                    font-size: 20px;
+                    padding: 0 36px;
+                }
             }
         }
     }
@@ -571,6 +588,10 @@ $color-gray: #787878;
         justify-content: center; /* 水平居中 */
         flex-wrap: wrap; /* 允許元素換行 */
 
+        @media screen and (max-width: $mobile) {
+            margin-top: 50px;
+        }
+
         .recommend_slider {
             position: absolute;
             top: 0;
@@ -578,6 +599,10 @@ $color-gray: #787878;
             width: 100%;
             height: 800px;
             display: flex;
+
+            @media screen and (max-width: $mobile) {
+                height: 300px;
+            }
 
             // & .slider {
             //     animation: slide 10s linear infinite;
@@ -604,13 +629,16 @@ $color-gray: #787878;
                 .promo {
                     width: 100%;
                     row-gap: 1.75rem;
-                    width: 23.75rem;
 
                     .post_img {
                         border-radius: 50px;
                         transition: 0.5s;
                         overflow-y: hidden;
                         margin: auto;
+
+                        @media screen and (max-width: $mobile) {
+                            margin-top: 10px;
+                        }                
 
                         &:hover {
                             transform: rotate(1deg);
@@ -624,6 +652,11 @@ $color-gray: #787878;
                             transition: 0.5s;
                             overflow-y: hidden;
 
+                            @media screen and (max-width: $mobile) {
+                                width: 250px;
+                                height: 100px;
+                            }                
+
                             &:hover {
                                 transform: rotate(1deg);
                                 overflow-y: hidden;
@@ -636,6 +669,10 @@ $color-gray: #787878;
                             height: 640px;
                             margin: 0 auto;
                             object-fit: cover;
+
+                            @media screen and (max-width: $mobile) {
+                                height: 230px;
+                            }                
                         }
                     }
 
@@ -665,16 +702,25 @@ $color-gray: #787878;
     background-image: url(./images/bg_hall.jpg);
     background-size: cover;
     width: 100%;
-    height: 135vh;
+    height: 150vh;
     overflow: hidden;
+
+    @media screen and (max-width: $mobile) {
+        height: 110vh;
+    }    
 
     .show_textarea {
         position: relative;
         display: grid;
         grid-template-columns: 12% 28% 60%;
-        height: 100px;
-        margin: 50px 100px 20px;
+        height: 200px;
+        margin: 50px 50px 20px;
         width: 100%;
+
+        @media screen and (max-width: $mobile) {
+            margin: 20px 30px;
+            height: 125px;
+        }    
 
         h2 {
             display: block;
@@ -694,6 +740,13 @@ $color-gray: #787878;
                 font-size: 26px;
                 font-weight: 900;
                 font-family: sans-serif;
+                position: absolute;
+                top: 0;
+
+                @media screen and (max-width: $mobile) {
+                    position: absolute;
+                    top: 0;    
+                }            
             }
         }
 
@@ -702,6 +755,16 @@ $color-gray: #787878;
             font-size: 18px;
             font-weight: 500;
             font-family: sans-serif;
+            position: absolute;
+            top: 70px;
+
+            @media screen and (max-width: $mobile) {
+                position: absolute;
+                top: 70px;
+                line-height: 1.5;
+                padding-right: 40px;
+            }            
+
         }
     }
 
@@ -758,6 +821,10 @@ $color-gray: #787878;
                     grid-template-columns: 40% 60%;
                     padding: 30px;
                     grid-gap: 50px;
+
+                    @media screen and (max-width: $mobile) {
+                        margin-top: 80px;
+                    }        
 
                     .show_img {
                         width: 100%;
