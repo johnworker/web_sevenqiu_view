@@ -1147,10 +1147,18 @@ footer {
     width: 100%;
     margin-top: 50px;
 
+    @media screen and (max-width: $mobile) {
+        padding: 35px;
+    }        
+
     .big_container {
         display: flex;
         justify-content: center;
         column-gap: 250px;
+
+        @media screen and (max-width: $mobile) {
+            display: block;
+        }        
 
         .mini_container {
             width: 100%;

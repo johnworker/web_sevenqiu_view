@@ -1025,11 +1025,21 @@ footer {
   width: 100%;
   margin-top: 50px;
 }
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 35px;
+  }
+}
 footer .big_container {
   display: flex;
   justify-content: center;
   -moz-column-gap: 250px;
        column-gap: 250px;
+}
+@media screen and (max-width: 767px) {
+  footer .big_container {
+    display: block;
+  }
 }
 footer .big_container .mini_container {
   width: 100%;
