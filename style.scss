@@ -1149,6 +1149,10 @@ $color-gray: #787878;
     height: 100vh;
     overflow-y: hidden;
 
+    @media screen and (max-width: $mobile) {
+        height: 155vh;
+    }
+
     .process_title {
         margin: 180px 0 0 50px;
         font-size: 36px;
@@ -1160,6 +1164,11 @@ $color-gray: #787878;
         margin: 100px auto 0;
         column-gap: 10px;
         max-width: 1310px;
+
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+            margin: 30px auto 0;
+        }    
 
         .process_minibox {
             margin: 0 auto;
@@ -1206,6 +1215,11 @@ $color-gray: #787878;
             background-color: rgba(31, 38, 36, 0.4);
             top: 90px;
             width: 400px;
+
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+        
         }
     }
 }

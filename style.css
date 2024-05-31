@@ -1054,6 +1054,11 @@ License URI: mit
   height: 100vh;
   overflow-y: hidden;
 }
+@media screen and (max-width: 767px) {
+  .process_bg {
+    height: 155vh;
+  }
+}
 .process_bg .process_title {
   margin: 180px 0 0 50px;
   font-size: 36px;
@@ -1065,6 +1070,12 @@ License URI: mit
   -moz-column-gap: 10px;
        column-gap: 10px;
   max-width: 1310px;
+}
+@media screen and (max-width: 767px) {
+  .process_bg .process_bigbox {
+    flex-direction: column;
+    margin: 30px auto 0;
+  }
 }
 .process_bg .process_bigbox .process_minibox {
   margin: 0 auto;
@@ -1104,6 +1115,11 @@ License URI: mit
   background-color: rgba(31, 38, 36, 0.4);
   top: 90px;
   width: 400px;
+}
+@media screen and (max-width: 767px) {
+  .process_bg .process_bigbox .liner {
+    display: none;
+  }
 }
 
 footer {
