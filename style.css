@@ -944,6 +944,11 @@ License URI: mit
   padding: 0 64px;
   overflow-y: hidden;
 }
+@media screen and (max-width: 767px) {
+  .work_bg {
+    height: 270vh;
+  }
+}
 .work_bg h2 {
   margin: 180px 0 50px;
   width: 100%;
@@ -955,6 +960,12 @@ License URI: mit
   margin-top: 100px;
   -moz-column-gap: 100px;
        column-gap: 100px;
+}
+@media screen and (max-width: 767px) {
+  .work_bg .work_info_box {
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 .work_bg .work_info_box .work_info {
   width: 100%;
@@ -976,6 +987,11 @@ License URI: mit
 }
 .work_bg .work_info_box .work_info .work_text p {
   line-height: 2;
+}
+@media screen and (max-width: 767px) {
+  .work_bg .work_info_box .work_info .work_text p {
+    margin-bottom: 50px;
+  }
 }
 
 .service_bg {

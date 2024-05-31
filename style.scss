@@ -1030,6 +1030,10 @@ $color-gray: #787878;
     padding: 0 64px;
     overflow-y: hidden;
 
+    @media screen and (max-width: $mobile) {
+        height: 270vh;
+    }
+
     h2 {
         margin: 180px 0 50px;
         width: 100%;
@@ -1041,6 +1045,11 @@ $color-gray: #787878;
         display: flex;
         margin-top: 100px;
         column-gap: 100px;
+
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+            margin-top: 0;
+        }
 
         .work_info {
             width: 100%;
@@ -1065,6 +1074,11 @@ $color-gray: #787878;
 
                 p {
                     line-height: 2;
+                    
+                    @media screen and (max-width: $mobile) {
+                        margin-bottom: 50px;
+                    }
+                
                 }
             }
         }
