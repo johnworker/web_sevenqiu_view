@@ -1031,7 +1031,7 @@ $color-gray: #787878;
     overflow-y: hidden;
 
     @media screen and (max-width: $mobile) {
-        height: 270vh;
+        height: 300vh;
     }
 
     h2 {
@@ -1070,13 +1070,21 @@ $color-gray: #787878;
 
                 h3 {
                     padding: 20px 0;
+                    font-size: 20px;
+
+                    @media screen and (max-width: $mobile) {
+                        font-size: 26px;
+                    }
+
                 }
 
                 p {
                     line-height: 2;
+                    font-size: 16px;
                     
                     @media screen and (max-width: $mobile) {
                         margin-bottom: 50px;
+                        font-size: 18px;
                     }
                 
                 }
@@ -1196,11 +1204,23 @@ $color-gray: #787878;
                 h3 {
                     text-align: center;
                     padding: 10px;
+                    font-size: 20px;
+
+                    @media screen and (max-width: $mobile) {
+                        font-size: 24px;
+                    }
+
                 }
 
                 p {
                     text-align: center;
                     padding: 10px;
+                    font-size: 16px;
+
+                    @media screen and (max-width: $mobile) {
+                        font-size: 18px;
+                    }
+        
                 }
             }
         }

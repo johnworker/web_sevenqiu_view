@@ -946,7 +946,7 @@ License URI: mit
 }
 @media screen and (max-width: 767px) {
   .work_bg {
-    height: 270vh;
+    height: 300vh;
   }
 }
 .work_bg h2 {
@@ -984,13 +984,21 @@ License URI: mit
 }
 .work_bg .work_info_box .work_info .work_text h3 {
   padding: 20px 0;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .work_bg .work_info_box .work_info .work_text h3 {
+    font-size: 26px;
+  }
 }
 .work_bg .work_info_box .work_info .work_text p {
   line-height: 2;
+  font-size: 16px;
 }
 @media screen and (max-width: 767px) {
   .work_bg .work_info_box .work_info .work_text p {
     margin-bottom: 50px;
+    font-size: 18px;
   }
 }
 
@@ -1100,10 +1108,22 @@ License URI: mit
 .process_bg .process_bigbox .process_minibox .process_text h3 {
   text-align: center;
   padding: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .process_bg .process_bigbox .process_minibox .process_text h3 {
+    font-size: 24px;
+  }
 }
 .process_bg .process_bigbox .process_minibox .process_text p {
   text-align: center;
   padding: 10px;
+  font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+  .process_bg .process_bigbox .process_minibox .process_text p {
+    font-size: 18px;
+  }
 }
 .process_bg .process_bigbox .liner {
   display: flex;
