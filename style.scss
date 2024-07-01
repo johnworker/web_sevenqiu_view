@@ -481,7 +481,7 @@ $color-gray: #787878;
             .bg {
                 flex-shrink: 0; /* 防止圖片在 flex 容器中縮放 */
                 // flex: 0 0 100%;  // 每張圖片佔滿容器寬度
-                width: auto; /* 圖片自然寬度 */
+                width: 100%; /* 圖片自然寬度 */
                 height: 1200px; /* 設定高度為容器高度 */
             }
         }
@@ -1138,6 +1138,10 @@ $color-gray: #787878;
         width: 100%;
         height: 400px;
         margin-top: 300px;
+
+        @media screen and (min-width: $very_big_desk) {
+            height: 500px;
+        }    
 
         @media screen and (max-width: $mobile) {
             margin-top: 300px;
